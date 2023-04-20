@@ -1,0 +1,81 @@
+// @font-face {
+//     font-family: "font1" ;
+//     src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+// }
+
+ 
+
+$color1: black;
+$color2: rgba(255, 234, 0, 0.63);
+$color3: white;
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+};
+
+
+nav {
+    ul{
+        @include flex;
+
+    }
+    
+};
+
+
+li {
+    display: flex;
+    list-style: none;
+    
+};
+
+//Images
+
+#logo{
+    width:200px;
+}
+.photos{
+    width: 500px;
+}
+
+.picto{
+    width: 100px;
+    display:flex;
+}
+
+@mixin center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+@mixin flex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infos{
+   @include center;
+  
+}
+
+.branding {
+    @include center;
+}
+
+.politiques ul {
+    @include flex;
+}
+
+.category img {
+    width:500px;
+}
+.fans img {
+    width: 500px;
+}
+
+img_preorder {
+    width: 1000px;
+    height: 1000px;
+}
