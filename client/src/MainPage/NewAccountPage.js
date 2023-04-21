@@ -68,7 +68,7 @@ const NewAccountPage = () => {
           setEmail("");
           setPassword("");
           //Redirection
-          navigate("/account");
+          navigate("/connectPage");
         } else {
           //Message d'erreur d'insertion dans la BDD
           setMessage(response.message);

@@ -6,6 +6,7 @@ import {
   UserLog,
   UserById,
   UserUpdate,
+  UserDelete,
 } from "../controller/Users.js";
 
 // Constante
@@ -22,5 +23,6 @@ router.post("/connectPage", UserLog);
 router.post("/api/connect", UserLog);
 router.get("/api/getuser/:id", UserById);
 router.post("/UserUpdate", UserUpdate);
+router.post("/UserDelete/:id", UserDelete);
 
 export default router;

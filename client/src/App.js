@@ -40,7 +40,7 @@ function App() {
             <Route path="/account" element={<BoardPage />} />
             <Route path="/newAccountPage" element={<NewAccountPage />} />
             <Route path="/connectPage" element={<ConnectPage />} />
-            <Route path="/disconnect" element={<DisconnectPage />} />
+            <Route path="/disconnectPage" element={<DisconnectPage />} />
             
           </Routes>
         </BrowserRouter>

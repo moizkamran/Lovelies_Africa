@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import {useNavigate} from "react-router-dom"
+
 
 const UserInfos = () => {
   //les states pour gérer le formulaire
@@ -10,6 +12,10 @@ const UserInfos = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+ 
+ 
+   //Redirection
+   const navigate = useNavigate();
 
   //un state pour gérer l'état du formulaire (disabled ou non)
   const [dis, setDis] = useState(true);
@@ -79,6 +85,35 @@ const UserInfos = () => {
     }
   };
 
+  //envoi de données utilisateur à vide
+  const UserDelete = (idUser) => {
+      let datas = {
+        name: "",
+        firstname: "",
+        email: "",
+        password:"",
+        id: "",
+      };
+  
+      let req = new Request(`http://localhost:9000/UserDelete/${idUser}`, {
+        method: "post",
+        body: JSON.stringify(datas),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      });
+
+      fetch(req)
+        .then((response) => response.json())
+        .then((response) => {
+          navigate("/account");
+        });
+    
+  };  
+    
+
+
   return (
     <form>
       <div>
@@ -126,11 +161,13 @@ const UserInfos = () => {
       {/* si il y a un message alors on l'affiche*/}
       {message !== "" && <p>{message}</p>}
       <button type="button" onClick={modifier}>
+
         {dis === true ? "Modifier" : "Valider les modifications"}
       </button>
-      <button>Supprimer</button>
+      <button onClick ={() => {UserDelete(idUser)}}>Supprimer</button>
     </form>
   );
 };
+
 
 export default UserInfos;

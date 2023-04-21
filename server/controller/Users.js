@@ -74,5 +74,16 @@ const UserUpdate = (req, res) => {
     );
   });
 };
-
-export { UserRegister, UserLog, UserById, UserUpdate };
+//Suppression utilisation
+const UserDelete = (req, res) => {
+  let id = req.params.id;
+  console.log(id);
+  pool.query(
+    "DELETE users FROM users WHERE id = ?",
+    [id],
+    function (error, user, fields) {
+      res.json(user[0]);
+    }
+  );
+};
+export { UserRegister, UserLog, UserById, UserUpdate, UserDelete };

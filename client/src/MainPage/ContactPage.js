@@ -7,7 +7,7 @@ const ContactPage = () => {
         <p>66 rue de Paris</p>
         <p>94190 Villeneuve saint Georges</p>
        <strong> <p>
-          <i>&#9998;</i> Pour toutes commande ou demande d'informations,
+          <i>&#9998;</i> Pour toute commande ou demande d'informations,
           veuillez nous envoyer un mail à{" "}
           <a href="mailto:contact@lovelies.africa.com">
             contact@loveliesafrica.com
