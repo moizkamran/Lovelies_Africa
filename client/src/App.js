@@ -38,8 +38,8 @@ function App() {
             <Route path="/privatepolicy" element={<PrivatePolicy />} />
             <Route path="/refundpolicy" element={<RefundPolicy />} />
             <Route path="/account" element={<BoardPage />} />
-            <Route path="/newaccount" element={<NewAccountPage />} />
-            <Route path="/connect" element={<ConnectPage />} />
+            <Route path="/newAccountPage" element={<NewAccountPage />} />
+            <Route path="/connectPage" element={<ConnectPage />} />
             <Route path="/disconnect" element={<DisconnectPage />} />
             
           </Routes>

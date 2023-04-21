@@ -5,10 +5,10 @@ import { useSelector } from "react-redux";
 
 const UserInfos = () => {
   //les states pour gérer le formulaire
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [firstname, setFirstname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
   //un state pour gérer l'état du formulaire (disabled ou non)
@@ -22,8 +22,8 @@ const UserInfos = () => {
     fetch("/api/getUser/" + idUser)
       .then((response) => response.json())
       .then((response) => {
-        setName(response.nom);
-        setFirstname(response.prenom);
+        setName(response.name);
+        setFirstname(response.firstname);
         setEmail(response.email);
       });
   }, [idUser]);
@@ -62,8 +62,8 @@ const UserInfos = () => {
         id: idUser,
       };
 
-      let req = new Request("/usersupdate", {
-        method: "POST",
+      let req = new Request("/userUpdate", {
+        method: "post",
         body: JSON.stringify(datas),
         headers: {
           Accept: "application/json",
@@ -74,7 +74,7 @@ const UserInfos = () => {
       fetch(req)
         .then((response) => response.json())
         .then((response) => {
-          setMessage("Les modifications ont bien été prises en compte");
+          setMessage("Les modifications ont bien été mises à jour");
         });
     }
   };
@@ -128,6 +128,7 @@ const UserInfos = () => {
       <button type="button" onClick={modifier}>
         {dis === true ? "Modifier" : "Valider les modifications"}
       </button>
+      <button>Supprimer</button>
     </form>
   );
 };

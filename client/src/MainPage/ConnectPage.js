@@ -1,21 +1,21 @@
-// Ici on part un peu sur le même principe que la page de création du compte
-import { useState } from "react";
-// on en aura besoin pour récupérer des state
-import { useDispatch } from "react-redux";
+//Dépendances
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 
+//Variables
 const ConnectPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
-  //useNavigate permettra d'effectuer une redirection
+   //Redirection
   const navigate = useNavigate();
 
-  //useDispatch permettra d'appeler une action du reducer afin d'écrire dans le state global
+  //Appel d'action 
   const dispatch = useDispatch();
 
-  // récupèration des valeur des input
+  //Gestion de la mise à jour des valeurs par l'event
   const changeEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -23,18 +23,20 @@ const ConnectPage = () => {
   const changePassword = (e) => {
     setPassword(e.target.value);
   };
-
+ //Envoi des informations dans la BDD
   const submit = () => {
-    //envoi des données en POST
+    //Valeurs à recupérer dans la BDD
     let datas = {
       email: email,
       password: password,
     };
 
-    // attention au port que vous utilisez !!
-    let req = new Request("http://localhost:9000/connect", {
-      method: "POST",
+  // Gestion de la requête: je passe les infos au controller Users qui les renvoi à la BDD
+    let req = new Request("http://localhost:9000/connectPage", {
+      method: "post",
+      //body natif à l'objet request
       body: JSON.stringify(datas),
+      //Gestion des renvois des informations sous format json avec la propriété accept
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -44,18 +46,17 @@ const ConnectPage = () => {
     fetch(req)
       .then((response) => response.json())
       .then((response) => {
-        // reponse générée dans le controller (donc si les identifiants de connexion sont ok)
-        // alors on appelle la méthode dispatch
-        // du reducer et ensuite récupérer l'id du client pour le connecter
+        //Renvoi des valeurs pour le retour de réponse des identifiants et ID
         if (response.reponse) {
-          // la deuxième réponse est si la réponse du userLogin est vrai
+        // Réponse = userLogin = true
           dispatch({
             type: "connect_users",
             id: response.id,
           });
           setMessage("");
+          //Puis redirection
           navigate("/account");
-          // sinon on envoie un message d'erreur (contenu dans la réponse de la requête)
+        //Ou réponse = userLogin = false: envoi d'un message d'erreur 
         } else {
           setMessage(response.message);
         }
@@ -86,7 +87,7 @@ const ConnectPage = () => {
         </button>
       </form>
       <p>
-        <a href="/newaccount">Créer un compte</a>
+        <a href="/newAccountPage">Créer un compte</a>
       </p>
     </>
   );

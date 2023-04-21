@@ -27,7 +27,7 @@ const Nav = () => {
         {/* si ID user = à nul ou indefined alors afficher le lien se connecter  */}
         {idUser == null || idUser === undefined ? (
           <span>
-            <a href="/connect"> Se connecter</a>
+            <a href="/connectPage"> Se connecter</a>
           </span>
         ) : idUser === 3 ? (
           <span>

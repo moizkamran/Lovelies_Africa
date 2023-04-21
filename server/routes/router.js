@@ -11,7 +11,6 @@ import {
 // Constante
 const router = express.Router();
 
-
 //Éventails
 router.get("/fans/", fans);
 router.get("/category", category);
@@ -19,7 +18,7 @@ router.get("/fans/:id", fanbyId);
 
 // Utilisateurs
 router.post("/newAccountPage", UserRegister);
-router.post("/connect", UserLog);
+router.post("/connectPage", UserLog);
 router.post("/api/connect", UserLog);
 router.get("/api/getuser/:id", UserById);
 router.post("/UserUpdate", UserUpdate);

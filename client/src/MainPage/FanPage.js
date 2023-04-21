@@ -76,11 +76,9 @@ const FanPage = () => {
         <section>
           <p>
             <strong>
-              <i>&#9993;</i> Enregistrez et complétez le formulaire de
-              pré-commande afin de procéder à l'achat du produit en l'envoyant à{" "}
-              <a href="mailto:contact@lovelies.africa.com">
-                contact@loveliesafrica.com
-              </a>
+              <i>&#9993;</i> Pour tout achat contactez nous à{" "}
+              <a href="mailto:contact@lovelies.africa.com">contact@loveliesafrica.com
+              </a> afin de recevoir le formulaire de pré-commande.
             </strong>
           </p>
           <img

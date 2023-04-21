@@ -37,7 +37,7 @@ const NewAccountPage = () => {
 
   //Insertion des informations dans la BDD
   const submit = () => {
-    //Ou on va chopper les valeurs à inserer dans la BDD
+    //Valeurs à inserer dans la BDD
     let datas = {
       name: name,
       firstname: firstname,
@@ -45,7 +45,7 @@ const NewAccountPage = () => {
       password: password,
     };
 
-    // gestion de la requête: je passe les infos au controller.users qui les renvoi à la BDD
+    // Gestion de la requête: je passe les infos au controller Users qui les renvoi à la BDD
     let req = new Request("http://localhost:9000/newAccountPage", {
       method: "post",
       //body natif à l'objet request
@@ -58,7 +58,7 @@ const NewAccountPage = () => {
         "Content-Type": "application/json",
       },
     });
-    // renvoi des valeurs sous la variable req pour le retour à vide
+    //Renvoi des valeurs sous la variable req pour le retour à vide
     fetch(req)
       .then((response) => response.json())
       .then((response) => {
@@ -67,7 +67,7 @@ const NewAccountPage = () => {
           setFirstname("");
           setEmail("");
           setPassword("");
-          //Redirection à la page de connexion
+          //Redirection
           navigate("/account");
         } else {
           //Message d'erreur d'insertion dans la BDD
@@ -79,7 +79,7 @@ const NewAccountPage = () => {
   return (
     <>
       <h1>Créer un compte</h1>
-      {/* si mon message est différent d'une chaine de caractère vide alors j'affiche un message sinon on affiche rien*/}
+      {/* si mon message est différent d'une chaine de caractère vide alors on affiche un message sinon on affiche rien*/}
       {message !== "" && <p>{message}</p>}
       <form>
         <label htmlFor="name">Entrez votre nom</label>
@@ -107,7 +107,7 @@ const NewAccountPage = () => {
       </form>
       <p>
         {/* Redirection si j'ai déja un compte */}
-        <a href="/connect">J'ai déjà un compte</a>
+        <a href="/connectPage">J'ai déjà un compte</a>
       </p>
     </>
   );
