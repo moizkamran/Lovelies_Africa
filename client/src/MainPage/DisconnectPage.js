@@ -14,6 +14,8 @@ const DisconnectPage = () => {
     });
     //Redirection vers l'accueil
     navigate("/");
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
   }, []);
 
   return <></>;
