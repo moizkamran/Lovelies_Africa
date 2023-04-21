@@ -1,7 +1,6 @@
+//Dépendances
 import { useEffect } from "react";
-//hook pour appeler le deconnect user de reducer pour remettre l'ID à zéro
 import { useDispatch } from "react-redux";
-//hook pour la redirection vers la page d'accueil
 import { useNavigate } from "react-router-dom";
 
 const DisconnectPage = () => {
@@ -9,10 +8,11 @@ const DisconnectPage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    //Remise à zéro de l'ID
     dispatch({
       type: "disconnect_users",
     });
-
+    //Redirection vers l'accueil
     navigate("/");
   }, []);
 

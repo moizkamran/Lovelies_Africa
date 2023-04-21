@@ -20,10 +20,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//Récuperation des infos du formulaire
-//app.use(express.json());
-//app.use(express.urlencoded({extended: true}));
-
 //Routes
 app.use("/", router);
 

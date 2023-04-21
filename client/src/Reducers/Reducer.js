@@ -5,7 +5,6 @@ let stateInit = {
     idUser: null,
   };
 
-
 const reducer = (state = stateInit, action = {}) => {
   console.log(action);
   //gestion des actions du Reducer

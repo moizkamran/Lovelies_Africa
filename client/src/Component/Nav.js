@@ -1,8 +1,4 @@
-// import { useSelector } from "react-redux";
-
 const Nav = () => {
-  // //récupération de l'idUser du state global pour savoir s'il est connecté
-  // const { idUser } = useSelector((state) => state);
   return (
     <nav>
       <ul>
@@ -21,16 +17,12 @@ const Nav = () => {
         <li>
           <a href="/association">Association Lovelies People</a>
         </li>
-        
         <li>
-            <a href="/connectPage">Connexion</a>
-      </li>
-    
-          <li>
-            <a href="/disconnectPage">Deconnexion</a>
-          </li>
-        
-           
+          <a href="/connectPage">Connexion</a>
+        </li>
+        <li>
+          <a href="/disconnectPage">Deconnexion</a>
+        </li>
       </ul>
     </nav>
   );
