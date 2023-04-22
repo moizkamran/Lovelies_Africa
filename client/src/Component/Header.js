@@ -1,5 +1,4 @@
 import Nav from "./Nav";
-//import Cart from "./Cart";
 
 const Header = () => {
   return (
@@ -16,9 +15,8 @@ const Header = () => {
           src="../img/conception/logo_noir.jpg"
           alt="Logo Lovelies Africa"
         />
-
-        {/* <Cart /> */}
       </section>
+      {/* Affichage de la nav */}
       <Nav />
     </header>
   );

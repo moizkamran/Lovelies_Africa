@@ -1,9 +1,10 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <section className="nous">
         <h2>Pourquoi nous choisir ?</h2>
-        <article>
+
+        <article className="adverts">
           <img
             className="picto"
             src="../img/conception/ecolo.png"
@@ -15,7 +16,8 @@ const Footer = () => {
             par des artisans qualifiés.
           </p>
         </article>
-        <article>
+
+        <article className="adverts">
           <img
             className="picto"
             src="../img/conception/livraison.png"
@@ -27,7 +29,8 @@ const Footer = () => {
             sont expédiés depuis notre entrepôt en France.
           </p>
         </article>
-        <article>
+
+        <article className="adverts">
           <img
             className="picto"
             src="../img/conception/enfants1.jpg"
@@ -40,7 +43,8 @@ const Footer = () => {
             caritatifs qui nous tiennent à coeur.
           </p>
         </article>
-        <article>
+
+        <article className="adverts">
           <img
             className="picto"
             src="../img/conception/qualite.png"
@@ -51,6 +55,7 @@ const Footer = () => {
         </article>
       </section>
 
+      {/* Liens du footer */}
       <section className="politiques">
         <ul>
           <li>
@@ -71,16 +76,8 @@ const Footer = () => {
           <li>
             <a href="/FAQ">FAQ - Questions fréquentes</a>
           </li>
-
         </ul>
       </section>
-
-      {/* <section>
-        <span className="cb"></span>
-        <span className="visa"></span>
-        <span className="mastercard"></span>
-        <span className="virement"></span>
-      </section> */}
     </footer>
   );
 };

@@ -1,11 +1,9 @@
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
 body {
   font-family: "Times New Roman", Times, serif;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 li {
@@ -23,6 +21,7 @@ li {
 
 .picto {
   width: 100px;
+  display: flex;
 }
 
 .infos {
@@ -35,4 +34,89 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.politiques ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.category img {
+  width: 500px;
+}
+
+.fans img {
+  width: 500px;
+}
+
+img_preorder {
+  width: 1000px;
+  height: 1000px;
+}
+
+.description {
+  display: flex;
+}
+
+.article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 2em;
+  margin: auto;
+}
+
+article .div {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  background-color: black;
+}
+#header p {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: rgba(242, 213, 25, 0.927);
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+#footer {
+  background-color: black;
+}
+#footer .nous {
+  display: flex;
+}
+#footer .adverts {
+  display: block;
+  justify-content: center;
+  align-items: justify;
+  color: white;
+  padding: 2em;
+}
+#footer ul {
+  padding: 2em;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

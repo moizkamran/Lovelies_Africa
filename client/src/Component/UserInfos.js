@@ -1,33 +1,29 @@
-// c'EST CE FORMULAIRE QUI PERMET DE MODIFIER L'UTILISATEUR
-
+//Dépendances
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-
 const UserInfos = () => {
-  //les states pour gérer le formulaire
   const [name, setName] = useState("");
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
- 
- 
-   //Redirection
-   const navigate = useNavigate();
 
-   //Appel d'action 
+  //Redirection
+  const navigate = useNavigate();
+
+  //Appel d'action
   const dispatch = useDispatch();
 
-  //un state pour gérer l'état du formulaire (disabled ou non)
-  const [dis, setDis] = useState(true);
+  //State de gestion d'état de désactivation du formulaire
+  const [disable, setDisable] = useState(true);
 
   //les données issues du state global
   const { idUser } = useSelector((state) => state);
 
-  //au chargement du composant, on va chercher les informations qui concernent l'utilisateur
+  //Récupération de l'utilisateur côté serveur
   useEffect(() => {
     fetch("/api/getUser/" + idUser)
       .then((response) => response.json())
@@ -35,10 +31,11 @@ const UserInfos = () => {
         setName(response.name);
         setFirstname(response.firstname);
         setEmail(response.email);
+        setPassword(response.password);
       });
   }, [idUser]);
 
-  //fonction permettant la modification des valeurs contenues dans le formulaire
+  //Gestion de la mise à jour des valeurs par l'event
   const handleChange = (e) => {
     switch (e.target.id) {
       case "name":
@@ -57,13 +54,12 @@ const UserInfos = () => {
     }
   };
 
-  //envoi des modifications de données utilisateur
-  const modifier = () => {
-    setDis(!dis);
+  //Envoi des modifications des données user
+  const edit = () => {
+    setDisable(!disable);
 
-    if (dis === false) {
-      //on envoie les modifications en bdd
-      //envoi des données en POST
+    if (disable === false) {
+      //Valeurs à modifier dans la BDD
       let datas = {
         name: name,
         firstname: firstname,
@@ -71,7 +67,7 @@ const UserInfos = () => {
         password: password,
         id: idUser,
       };
-
+      // Gestion de la requête
       let req = new Request("/userUpdate", {
         method: "post",
         body: JSON.stringify(datas),
@@ -89,44 +85,36 @@ const UserInfos = () => {
     }
   };
 
-  //envoi de données utilisateur à vide
+  //Envoi des données utilisateur à vide
   const UserDelete = (idUser) => {
-      let datas = {
-        name: "",
-        firstname: "",
-        email: "",
-        password:"",
-        id: "",
-      };
-  
-      let req = new Request(`http://localhost:9000/UserDelete/${idUser}`, {
-        method: "post",
-        body: JSON.stringify(datas),
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      });
+    let datas = {
+      name: "",
+      firstname: "",
+      email: "",
+      password: "",
+      id: "",
+    };
 
-      // fetch(req)
-      //   .then((response) => response.json())
-      //   .then((response) => {
-      //     navigate("/account");
-      //   });
-        fetch(req)
-        .then((response) => response.json())
-        .then((response) => {
-            dispatch({
-              type: "disconnect_users",
-            });
-      
-            navigate("/");
-          }, []); 
+    // Gestion de la requête
+    let req = new Request(`http://localhost:9000/UserDelete/${idUser}`, {
+      method: "post",
+      body: JSON.stringify(datas),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    });
 
+    fetch(req)
+      .then((response) => response.json())
+      .then((response) => {
+        dispatch({
+          type: "disconnect_users",
+        });
 
-  };  
-    
-
+        navigate("/");
+      }, []);
+  };
 
   return (
     <form>
@@ -136,7 +124,7 @@ const UserInfos = () => {
           type="text"
           id="name"
           value={name}
-          disabled={dis}
+          disabled={disable}
           onChange={handleChange}
         />
       </div>
@@ -147,7 +135,7 @@ const UserInfos = () => {
           type="text"
           id="fistname"
           value={firstname}
-          disabled={dis}
+          disabled={disable}
           onChange={handleChange}
         />
       </div>
@@ -158,7 +146,7 @@ const UserInfos = () => {
           type="email"
           id="email"
           value={email}
-          disabled={dis}
+          disabled={disable}
           onChange={handleChange}
         />
       </div>
@@ -172,18 +160,27 @@ const UserInfos = () => {
           onChange={handleChange}
         />
       </div>
-     <div> {/* si il y a un message alors on l'affiche*/}
-      {message !== "" && <p>{message}</p>}
-      <button type="button" onClick={modifier}>
-        {dis === true ? "Modifier" : "Valider les modifications"}
-      </button>
-      </div>
+
       <div>
-      <button onClick ={() => {UserDelete(idUser)}}>Supprimer</button>
+        {" "}
+        {/* si il y a un message alors on l'affiche*/}
+        {message !== "" && <p>{message}</p>}
+        <button type="button" onClick={edit}>
+          {disable === true ? "Modifier" : "Valider les modifications"}
+        </button>
+      </div>
+
+      <div>
+        <button
+          onClick={() => {
+            UserDelete(idUser);
+          }}
+        >
+          Supprimer
+        </button>
       </div>
     </form>
   );
 };
-
 
 export default UserInfos;

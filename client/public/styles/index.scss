@@ -1,7 +1,7 @@
-// @font-face {
-//     font-family: "font1" ;
-//     src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
-// }
+@font-face {
+    font-family: "font1" ;
+    src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
 
  
 
@@ -73,14 +73,17 @@ img_preorder {
 }
 
 .description{
-    display:block
+    display:flex
 }
 .article{
-    display:block;
-    justify-content:center;
-    align-items: center;
-    width: 50%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width: auto;
     height: auto;
+    padding:2em;
+    margin: auto;
+
 
 }
 article .div{
@@ -88,3 +91,49 @@ article .div{
     justify-content:center;
     align-items: center;
 }
+#header{
+    background-color: black;
+    p{
+        color: white
+    }
+   
+}
+
+nav ul{
+    @include flex();
+    padding: 2em;
+    a {
+    color: white;
+    text-decoration: none;
+    &:hover{ color: rgba(242, 213, 25, 0.927);
+
+    }
+   
+    };
+}
+
+body{
+    background-color: whitesmoke;
+    
+}
+
+#footer{
+    background-color: black;
+    .nous{display: flex
+    };
+    .adverts{
+        display:block;
+        justify-content: center;
+        align-items: justify;
+        color: white;
+        padding: 2em;
+    };
+    ul{
+        padding:2em;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        
+    };
+};

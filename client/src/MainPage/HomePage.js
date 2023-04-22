@@ -19,9 +19,11 @@ const Home = () => {
           <h2>Détendez-vous grâce à l’éventail La Dakaroise !</h2>
           <p>
             Emportez-le partout avec vous, il vous apportera fraîcheur grâce à
-            son corps robuste et léger. Il est refermable dans sa pochette, ce
-            qui en fait un ventilateur à main et un allié parfait dans votre
-            sac.
+            son corps robuste et léger.
+          </p>
+          <p>
+            Il est refermable dans sa pochette, ce qui en fait un ventilateur à
+            main et un allié parfait dans votre sac.
           </p>
         </article>
         <article className="article">
@@ -72,12 +74,19 @@ const Home = () => {
           <h2>Déco minimaliste ou maximaliste, il est fait pour vous !</h2>
         </article>
         <article className="article">
+          <div>
           <p>
             L'éventail La Dakaroise est un accessoire décoratif raffiné
-            célébrant toutes les tendances d'intérieurs. Exposez le au grès de
-            vos envies, sur le mur, sur la table, ou encore où votre imagination
-            vous mènera pour une ambiance art-déco assurée.
+            célébrant toutes les tendances d'intérieurs.
           </p>
+          </div>
+          <div>
+          <p>
+            Exposez le au grès de vos envies, sur le mur, sur la table, ou
+            encore où votre imagination vous mènera pour une ambiance art-déco
+            assurée.
+          </p>
+          </div>
         </article>
         <article className="article">
           <img
