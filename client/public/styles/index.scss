@@ -15,14 +15,6 @@ body{
 };
 
 
-nav {
-    ul{
-        @include flex;
-
-    }
-    
-};
-
 
 li {
     display: flex;
@@ -78,4 +70,21 @@ li {
 img_preorder {
     width: 1000px;
     height: 1000px;
+}
+
+.description{
+    display:block
+}
+.article{
+    display:block;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+
+}
+article .div{
+    display:block;
+    justify-content:center;
+    align-items: center;
 }

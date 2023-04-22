@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <>
-      <div>
+      <section className="title">
         <h1>
           Bienvenue chez Lovelies Africa, l'Art de la mode et de la décoration
           éclectique éthnique-chic!
@@ -10,15 +10,13 @@ const Home = () => {
           Voyageons ensemble dans notre univers afro-chic pour un dépaysement
           total assuré !
         </p>
-      </div>
+      </section>
 
       {/* carroussel */}
 
-      <section id="fan_description">
-        <article>
-          <h2>
-            <span>Détendez-vous grâce à l’éventail La Dakaroise !</span>
-          </h2>
+      <section className="description">
+        <article className="article">
+          <h2>Détendez-vous grâce à l’éventail La Dakaroise !</h2>
           <p>
             Emportez-le partout avec vous, il vous apportera fraîcheur grâce à
             son corps robuste et léger. Il est refermable dans sa pochette, ce
@@ -26,7 +24,7 @@ const Home = () => {
             sac.
           </p>
         </article>
-        <article>
+        <article className="article">
           <img
             className="photos"
             src="../img/product/complete_violet_transparent.png"
@@ -35,25 +33,25 @@ const Home = () => {
         </article>
       </section>
 
-      <section className="descriptif_images">
-        <article>
+      <section className="description">
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/mannequin1.jpg"
             alt="mannequin avec éventail violet"
           />
         </article>
-        <article>
+        <article className="article">
           <h2>L'éventail à la casquette fashion</h2>
         </article>
-        <article>
+        <article className="article">
           <p>
             Idéal pour apporter de la gaieté, une touche pop et colorée à vos
             looks quotidiens l'éventail accompagnera vos tenues tel un
             accessoire de mode.
           </p>
         </article>
-        <article>
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/mannequin3.jpg"
@@ -62,18 +60,18 @@ const Home = () => {
         </article>
       </section>
 
-      <section>
-        <article>
+      <section className="description">
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/deco1.jpg"
             alt="decoration eventail bleu"
           />
         </article>
-        <article>
+        <article className="article">
           <h2>Déco minimaliste ou maximaliste, il est fait pour vous !</h2>
         </article>
-        <article>
+        <article className="article">
           <p>
             L'éventail La Dakaroise est un accessoire décoratif raffiné
             célébrant toutes les tendances d'intérieurs. Exposez le au grès de
@@ -81,7 +79,7 @@ const Home = () => {
             vous mènera pour une ambiance art-déco assurée.
           </p>
         </article>
-        <article>
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/deco3.jpeg"
@@ -89,7 +87,7 @@ const Home = () => {
           />
         </article>
       </section>
-    
+
       {/* <section>
         <h2>
           <span>La voici, la voila... La Dakaroise... Regardez la...</span>
@@ -99,7 +97,6 @@ const Home = () => {
         </video>
       </section>
         <video src="" autoPlay loop muted></video> */}
-   
     </>
   );
 };

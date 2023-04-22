@@ -1,24 +1,25 @@
 const AssociationPage = () => {
   return (
     <>
-      <div>
+      <section className="title">
         <h1>Association Lovelies People</h1>
         <p>Lovelies Premium Brand s'engage.</p>
         <p>
-          Pour chaque achat sur notre boutique Lovelies Africa Business, nous
-          dédions 2,5% par vente destinés aux projets caritatifs.
+          Pour chaque achat sur notre boutique Lovelies Africa, nous dédions
+          2,5% par vente destinés aux projets caritatifs.
         </p>
-      </div>
+      </section>
 
-      <section className="descriptif_asso">
-        <article>
+      <section className="description">
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/village.jpg"
             alt="village Sénégal"
           />
         </article>
-        <article>
+
+        <article className="article">
           <h2>Être au service du bien commun</h2>
           <p>
             Pour chaque pays où nos articles sont confectionnés, nous consacrons
@@ -30,7 +31,8 @@ const AssociationPage = () => {
             créer une chaîne de solidarité à notre échelle.
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Changer des vies ne serait-ce que par un sourire</h2>
           <p>
             Tout au long de notre aventure, nous projetons de venir en aide à
@@ -42,7 +44,8 @@ const AssociationPage = () => {
             <a href="/collection"> Je soutiens en achetant</a>
           </button>
         </article>
-        <article>
+
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/enfants2.jpg"
@@ -51,22 +54,24 @@ const AssociationPage = () => {
         </article>
       </section>
 
-      <section className="descriptif_asso">
-        <article>
+      <section className="description">
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/villageois.jpg"
             alt="villagois"
           />
         </article>
-        <article>
+
+        <article className="article">
           <h2>Pour un monde meilleur</h2>
           <p>
             Rendre à la communauté de la meilleure des manières en apportant une
             contribution positive à la société.
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Car chacun peut apporter sa pierre à l'édifice</h2>
           <p>
             Nos prochaines missions consisteront à la plantation d'arbres et
@@ -75,11 +80,11 @@ const AssociationPage = () => {
             Dakaroise confectionné à Dakar.
           </p>
           <button>
-            {" "}
             <a href="/contact">J'offre une donation</a>
           </button>
         </article>
-        <article>
+
+        <article className="article">
           <img
             className="photos"
             src="../img/conception/villageoise.jpg"

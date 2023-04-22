@@ -1,14 +1,17 @@
 const RefundPolicy = () => {
   return (
     <>
-      <section>
+      <section className="title">
         <h1>Politique de retour et de remboursement</h1>
-        <article>
-          <p>
-            Notre politique dure 14 jours. Si plus de 14 jours se sont écoulés
-            depuis votre achat, nous ne pouvons malheureusement offrir ni
-            remboursement ni échange.{" "}
-          </p>
+        <p>
+          Notre politique dure 14 jours. Si plus de 14 jours se sont écoulés
+          depuis votre achat, nous ne pouvons malheureusement offrir ni
+          remboursement ni échange.{" "}
+        </p>
+      </section>
+
+      <section className="description">
+        <article className="article">
           <p>
             La garantie « satisfait ou remboursé » : la couleur de l'article ne
             vous convient finalement pas, vous vous êtes trompés de taille, vous
@@ -34,13 +37,13 @@ const RefundPolicy = () => {
             votre retour, 3 à 10 jours ouvrés sont nécessaires pour que les
             fonds apparaissent à nouveau sur votre compte.{" "}
           </p>
-
           <p>
             Pour compléter votre retour, nous exigeons un reçu ou une preuve
             d'achat. Ne retournez pas votre achat au fabricant.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Remboursements </h2>
           <p>
             Une fois votre retour reçu et inspecté, nous vous adresserons un
@@ -51,7 +54,8 @@ const RefundPolicy = () => {
             crédité(e) automatiquement dans un délai de quelques jours.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Remboursements retardés ou manquants </h2>
           <p>
             Si vous n'avez pas encore reçu de remboursement, revérifiez d'abord
@@ -67,7 +71,8 @@ const RefundPolicy = () => {
             promotion ne le sont pas.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Échanges </h2>
           <p>
             Nous ne remplaçons que les articles initialement défectueux ou
@@ -77,7 +82,8 @@ const RefundPolicy = () => {
             france, 94190, France.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Cadeaux</h2>
           <p>
             Si l'article a été marqué comme cadeau au moment de l'achat et s'il
@@ -86,7 +92,6 @@ const RefundPolicy = () => {
             retourné reçu, un bon cadeau vous sera envoyé par email ou voie
             postale.{" "}
           </p>
-
           <p>
             Si l'article n'a pas été marqué comme cadeau au moment de l'achat,
             ou si la personne à l'origine du cadeau s'est fait envoyer la
@@ -95,25 +100,23 @@ const RefundPolicy = () => {
             retourné son cadeau.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>Expédition</h2>
           <p>
             Pour retourner votre produit, vous devez l'envoyer à l'adresse
             postale suivante : 66 rue de Paris, Villeneuve saint Georges, Ile de
             france, 94190, France.{" "}
           </p>
-
           <p>
             Les coûts d'expédition liés au retour de votre article sont à votre
             charge. Ils ne sont pas remboursables. Si vous recevez un
             remboursement, le coût d'expédition du retour en sera déduit.{" "}
           </p>
-
           <p>
             Selon l'endroit où vous vivez, le délai de réception de votre
             produit échangé peut varier.{" "}
           </p>
-
           <p>
             Si vous expédiez un article d'une valeur supérieure à 75 €, nous
             vous recommandons d'utiliser un service de suivi d'expédition ou de

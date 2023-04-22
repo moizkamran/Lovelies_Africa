@@ -1,13 +1,13 @@
 import { connect_users, disconnect_users } from "../Actions/actions.js";
 
-//définition de la source de vérité
+//Définition du state initial
 let stateInit = {
     idUser: null,
   };
 
 const reducer = (state = stateInit, action = {}) => {
   console.log(action);
-  //gestion des actions du Reducer
+  //Gestion des actions du reducer et retour du nouveau state
   switch (action.type) {
     case connect_users:
       return {

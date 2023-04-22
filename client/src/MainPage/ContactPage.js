@@ -1,23 +1,28 @@
 const ContactPage = () => {
   return (
     <>
-      <section>
+      <section className="title">
         <h1>Nos coordonnées de contact</h1>
         <p>SAS LOVELIES PREMIUM BRAND</p>
         <p>66 rue de Paris</p>
+
         <p>94190 Villeneuve saint Georges</p>
-       <strong> <p>
-          <i>&#9998;</i> Pour toute commande ou demande d'informations,
-          veuillez nous envoyer un mail à{" "}
-          <a href="mailto:contact@lovelies.africa.com">
-            contact@loveliesafrica.com
-          </a>{" "}
-          et nous reviendrons vers vous dans un délai de 48 heures maximum.
-        </p></strong>
+        <strong>
+          <p>
+            <i>&#9998;</i>
+            Pour toute commande ou demande d'informations, veuillez nous envoyer
+            un mail à{" "}
+            <a href="mailto:contact@lovelies.africa.com">
+              contact@loveliesafrica.com
+            </a>{" "}
+            et nous reviendrons vers vous dans un délai de 48 heures maximum.
+          </p>
+        </strong>
       </section>
-      <section>
+
+      <section className="description">
         <h2> F.A.Q - Questions fréquentes</h2>
-        <article>
+        <article className="policy">
           <h3>Quels sont les temps d’expédition pour vos produits ?</h3>
           <p>
             Nous prenons jusqu'à 48 heures maximum pour traiter votre commande

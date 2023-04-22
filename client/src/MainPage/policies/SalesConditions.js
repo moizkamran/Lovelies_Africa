@@ -1,19 +1,21 @@
 const SalesConditions = () => {
   return (
     <>
-      <section>
+      <section className="title">
         <h1>Conditions Générales de Ventes</h1>
-        <article>
-          <p>
-            Ce site web est exploité par Lovelies Premium Brand. Partout sur le
-            site, nous employons les termes « nous », « notre » et « nos » en
-            référence à Lovelies Premium Brand. Ce site web, y compris
-            l'ensemble des informations, outils et services auquel il donne
-            accès, est offert par Lovelies Premium Brand à l'utilisateur que
-            vous êtes, à condition que vous acceptiez la totalité des modalités,
-            conditions, politiques et avis stipulés ici.{" "}
-          </p>
+        <p>
+          Ce site web est exploité par Lovelies Premium Brand. Partout sur le
+          site, nous employons les termes « nous », « notre » et « nos » en
+          référence à Lovelies Premium Brand. Ce site web, y compris l'ensemble
+          des informations, outils et services auquel il donne accès, est offert
+          par Lovelies Premium Brand à l'utilisateur que vous êtes, à condition
+          que vous acceptiez la totalité des modalités, conditions, politiques
+          et avis stipulés ici.{" "}
+        </p>
+      </section>
 
+      <section className="description">
+        <article className="article">
           <p>
             En visitant notre site et/ou en achetant quelque chose auprès de
             notre entreprise, vous prenez part à notre « Service » et acceptez
@@ -34,7 +36,6 @@ const SalesConditions = () => {
             sont considérées comme une offre, leur acceptation se limite
             expressément à elles.{" "}
           </p>
-
           <p>
             Chacun des nouveaux outils ou fonctionnalités qui sont ajoutés à la
             présente boutique est également assujetti aux Conditions
@@ -49,9 +50,9 @@ const SalesConditions = () => {
             acceptez celles-ci.{" "}
           </p>
         </article>
-        <article>
-          <h2> 3 – EXACTITUDE, EXHAUSTIVITÉ ET ACTUALITÉ DES INFORMATIONS</h2>
 
+        <article className="article">
+          <h2> 3 – EXACTITUDE, EXHAUSTIVITÉ ET ACTUALITÉ DES INFORMATIONS</h2>
           <p>
             Nous ne saurions être tenus responsables si les informations
             proposées sur ce site sont inexactes, incomplètes ou caduques. Le
@@ -73,7 +74,8 @@ const SalesConditions = () => {
             surveiller les changements apportés à notre site.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>4 – MODIFICATIONS DU SERVICE ET DES PRIX</h2>
 
           <p>Les prix de nos produits sont modifiables sans préavis. </p>
@@ -90,7 +92,8 @@ const SalesConditions = () => {
             suspension ou interruption du Service.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>5 – PRODUITS OU SERVICES</h2>
 
           <p>
@@ -100,7 +103,6 @@ const SalesConditions = () => {
             retour ou leur échange soit strictement assujetti à notre Politique
             de retour.{" "}
           </p>
-
           <p>
             Nous nous sommes efforcés de présenter aussi précisément que
             possible les couleurs et images des produits figurant sur la
@@ -117,7 +119,6 @@ const SalesConditions = () => {
             produit à tout moment. Toute offre de produit ou service sur ce site
             est nulle là où la loi l'interdit.{" "}
           </p>
-
           <p>
             Nous ne garantissons pas que la qualité des produits, services,
             informations ou autres matériels que vous achetez ou que vous vous
@@ -125,11 +126,11 @@ const SalesConditions = () => {
             éventuellement le Service seront corrigées.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>
             6 – EXACTITUDE DE LA FACTURATION ET DES INFORMATIONS DE COMPTE
           </h2>
-
           <p>
             Nous nous réservons le droit de refuser toute commande que vous
             passez auprès de nous. Nous pouvons, à notre seule discrétion,
@@ -151,20 +152,18 @@ const SalesConditions = () => {
             d'expiration, afin que nous puissions finaliser vos transactions et
             vous contacter en cas de besoin.{" "}
           </p>
-
           <p>
             Pour plus d'informations, veuillez consulter notre Politique de
             retour.{" "}
           </p>
         </article>
-        <article>
-          <h2>7 – OUTILS FACULTATIFS</h2>
 
+        <article className="article">
+          <h2>7 – OUTILS FACULTATIFS</h2>
           <p>
             Nous sommes susceptibles de vous fournir l'accès à des outils tiers
             que nous ne surveillons, ne contrôlons et ne gérons pas.{" "}
           </p>
-
           <p>
             Vous reconnaissez et acceptez que nous vous fournissons l'accès à
             ces outils « tels quels » et « sous réserve de disponibilité », sans
@@ -173,7 +172,6 @@ const SalesConditions = () => {
             quoi que ce soit à l'égard de ce qui pourrait résulter de ou être
             relié à votre utilisation des outils facultatifs tiers.{" "}
           </p>
-
           <p>
             Toute utilisation par vous des outils facultatifs proposés par le
             biais du site est entièrement à votre discrétion et à vos propres
@@ -181,7 +179,6 @@ const SalesConditions = () => {
             conditions dans lesquelles ces outils sont fournis par le(s)
             fournisseur(s) tiers concerné(s) et accepter ces conditions.{" "}
           </p>
-
           <p>
             Il se peut également qu'à l'avenir, nous proposions de nouveaux
             services et/ou de nouvelles fonctionnalités à travers le site web (y
@@ -190,14 +187,13 @@ const SalesConditions = () => {
             Conditions d'utilisation.{" "}
           </p>
         </article>
-        <article>
-          <h2>8 – LIENS DE TIERS</h2>
 
+        <article className="article">
+          <h2>8 – LIENS DE TIERS</h2>
           <p>
             Certains contenus, produits et services accessibles via notre
             Service peuvent inclure des éléments provenant de tiers.{" "}
           </p>
-
           <p>
             Les liens de tiers sur ce site peuvent vous rediriger vers des sites
             web de tiers qui ne sont pas affiliés à nous. Nous ne sommes pas
@@ -206,7 +202,6 @@ const SalesConditions = () => {
             responsabilité quant aux contenus ou sites web, ou aux autres
             contenus, produits ou services de sources tierces.{" "}
           </p>
-
           <p>
             Nous ne sommes pas responsables des préjudices ou dommages liés à
             l’achat ou à l’utilisation de biens, services, ressources, contenus
@@ -218,9 +213,9 @@ const SalesConditions = () => {
             tiers.{" "}
           </p>
         </article>
-        <article>
-          <h2>9 – COMMENTAIRES, RETOURS D'EXPÉRIENCE ET AUTRES SOUMISSIONS</h2>
 
+        <article className="article">
+          <h2>9 – COMMENTAIRES, RETOURS D'EXPÉRIENCE ET AUTRES SOUMISSIONS</h2>
           <p>
             Si, à notre demande, vous soumettez des contenus spécifiques (par
             exemple, dans le cadre de votre participation à des concours), ou
@@ -256,17 +251,17 @@ const SalesConditions = () => {
             par vous ou un tiers.
           </p>
         </article>
-        <article>
-          <h2>10 – INFORMATIONS PERSONNELLES</h2>
 
+        <article className="article">
+          <h2>10 – INFORMATIONS PERSONNELLES</h2>
           <p>
             La transmission de vos informations personnelles sur notre boutique
             est régie par notre Politique de confidentialité.{" "}
           </p>
         </article>
-        <article>
-          <h2>11 – ERREURS, INEXACTITUDES ET OMISSIONS</h2>
 
+        <article className="article">
+          <h2>11 – ERREURS, INEXACTITUDES ET OMISSIONS</h2>
           <p>
             Il se peut qu'il y ait parfois, sur notre site ou dans le Service,
             des informations contenant des erreurs typographiques, des
@@ -280,7 +275,6 @@ const SalesConditions = () => {
             moment et sans préavis (y compris après que vous ayez passé votre
             commande).{" "}
           </p>
-
           <p>
             Nous ne sommes pas tenus d'actualiser, de modifier ou de clarifier
             les informations indiquées dans le Service ou sur tout site web
@@ -292,9 +286,9 @@ const SalesConditions = () => {
             modifiées ou mises à jour.{" "}
           </p>
         </article>
-        <article>
-          <h2>12 – UTILISATIONS INTERDITES</h2>
 
+        <article className="article">
+          <h2>12 – UTILISATIONS INTERDITES</h2>
           <p>
             En plus des autres interdictions énoncées dans les Conditions
             d’utilisation, il vous est interdit d’utiliser le site ou son
@@ -323,20 +317,18 @@ const SalesConditions = () => {
             enfreint les interdits en matière d'utilisation.{" "}
           </p>
         </article>
-        <article>
-          <h2>13 – EXCLUSION DE GARANTIES ET LIMITATION DE RESPONSABILITÉ</h2>
 
+        <article className="article">
+          <h2>13 – EXCLUSION DE GARANTIES ET LIMITATION DE RESPONSABILITÉ</h2>
           <p>
             Nous ne garantissons, certifions ou déclarons en aucun cas que votre
             utilisation de notre Service sera ininterrompue, sécurisée, sans
             délai ou sans erreur.{" "}
           </p>
-
           <p>
             Nous ne garantissons pas que les résultats qui pourraient être
             obtenus en utilisant le Service seront exacts ou fiables.{" "}
           </p>
-
           <p>
             Vous acceptez que, de temps à autre, nous puissions retirer le
             Service pour des périodes indéterminées ou l'annuler à tout moment
@@ -352,7 +344,6 @@ const SalesConditions = () => {
             usage particulier, de durabilité, de titre et d’absence de
             contrefaçon.{" "}
           </p>
-
           <p>
             Lovelies Premium Brand, nos directeurs, responsables, employés,
             sociétés affiliées, agents, contractants, stagiaires, fournisseurs,
@@ -378,9 +369,9 @@ const SalesConditions = () => {
             mesure maximale permise par la loi.{" "}
           </p>
         </article>
-        <article>
-          <h2>14 – INDEMNISATION</h2>
 
+        <article className="article">
+          <h2>14 – INDEMNISATION</h2>
           <p>
             Vous acceptez d’indemniser, de défendre et de tenir Lovelies Premium
             Brand et notre société mère, nos filiales, sociétés affiliées,
@@ -394,9 +385,9 @@ const SalesConditions = () => {
             tiers.{" "}
           </p>
         </article>
-        <article>
-          <h2>15 – DISSOCIABILITÉ</h2>
 
+        <article className="article">
+          <h2>15 – DISSOCIABILITÉ</h2>
           <p>
             Dans le cas où une quelconque disposition des présentes Conditions
             d’utilisation est jugée illégale, nulle ou inapplicable, cette
@@ -406,15 +397,14 @@ const SalesConditions = () => {
             n'affecte la validité et l’applicabilité des autres dispositions.{" "}
           </p>
         </article>
-        <article>
-          <h2>16 – RÉSILIATION</h2>
 
+        <article className="article">
+          <h2>16 – RÉSILIATION</h2>
           <p>
             Les obligations et responsabilités engagées par les parties avant la
             date de résiliation resteront en vigueur après la résiliation de cet
             accord, et ce, à toutes fins.{" "}
           </p>
-
           <p>
             Les présentes Conditions d’utilisation resteront en vigueur, à moins
             et jusqu’à ce qu’elles soient résiliées par vous ou par nous. Vous
@@ -422,7 +412,6 @@ const SalesConditions = () => {
             avisant que vous ne souhaitez plus utiliser nos Services, ou lorsque
             vous cessez d’utiliser notre site.{" "}
           </p>
-
           <p>
             Si nous jugeons ou suspectons, à notre seule discrétion, que vous ne
             respectez pas ou que vous n'avez pas respecté une quelconque
@@ -434,14 +423,14 @@ const SalesConditions = () => {
             ceux-ci).{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>17 – INTÉGRALITÉ DE L’ACCORD</h2>
           <p>
             Tout manquement de notre part à l’exercice ou à l’application d'un
             droit ou d'une disposition des présentes Conditions d’utilisation ne
             constitue pas une renonciation à ce droit ou à cette disposition.{" "}
           </p>
-
           <p>
             Les présentes Conditions d’utilisation ou toute autre politique ou
             règle d’exploitation que nous publions sur ce site ou qui concernent
@@ -458,9 +447,9 @@ const SalesConditions = () => {
             rédactrice.{" "}
           </p>
         </article>
-        <article>
-          <h2>18 – LOI APPLICABLE</h2>
 
+        <article className="article">
+          <h2>18 – LOI APPLICABLE</h2>
           <p>
             Les présentes Conditions d’utilisation, ainsi que tout accord
             distinct par lequel nous vous fournissons les Services sont régis et
@@ -468,14 +457,13 @@ const SalesConditions = () => {
             Georges, Ile de france, 94190, France.{" "}
           </p>
         </article>
-        <article>
-          <h2>19 – MODIFICATIONS APPORTÉES AUX CONDITIONS D’UTILISATION</h2>
 
+        <article className="article">
+          <h2>19 – MODIFICATIONS APPORTÉES AUX CONDITIONS D’UTILISATION</h2>
           <p>
             Vous pouvez consulter la version la plus récente des Conditions
             d’utilisation à tout moment sur cette page.{" "}
           </p>
-
           <p>
             Nous nous réservons le droit, à notre seule discrétion, de mettre à
             jour, modifier ou remplacer toute partie des présentes Conditions
@@ -487,9 +475,9 @@ const SalesConditions = () => {
             présentes Conditions d'utilisation, vous acceptez celles-ci.{" "}
           </p>
         </article>
-        <article>
-          <h2>20 – COORDONNÉES</h2>
 
+        <article className="article">
+          <h2>20 – COORDONNÉES</h2>
           <p>
             Les questions relatives aux Conditions d’utilisation doivent nous
             être envoyées à contact@loveliesafrica.com.{" "}

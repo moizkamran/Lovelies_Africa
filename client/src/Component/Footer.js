@@ -72,9 +72,6 @@ const Footer = () => {
             <a href="/FAQ">FAQ - Questions fréquentes</a>
           </li>
 
-          <li>
-            <a href="/association">Association Lovelies People</a>
-          </li>
         </ul>
       </section>
 

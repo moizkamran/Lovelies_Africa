@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import {useNavigate} from "react-router-dom"
+import { useDispatch } from "react-redux";
 
 
 const UserInfos = () => {
@@ -16,6 +17,9 @@ const UserInfos = () => {
  
    //Redirection
    const navigate = useNavigate();
+
+   //Appel d'action 
+  const dispatch = useDispatch();
 
   //un state pour gérer l'état du formulaire (disabled ou non)
   const [dis, setDis] = useState(true);
@@ -104,12 +108,22 @@ const UserInfos = () => {
         },
       });
 
-      fetch(req)
+      // fetch(req)
+      //   .then((response) => response.json())
+      //   .then((response) => {
+      //     navigate("/account");
+      //   });
+        fetch(req)
         .then((response) => response.json())
         .then((response) => {
-          navigate("/account");
-        });
-    
+            dispatch({
+              type: "disconnect_users",
+            });
+      
+            navigate("/");
+          }, []); 
+
+
   };  
     
 
@@ -158,13 +172,15 @@ const UserInfos = () => {
           onChange={handleChange}
         />
       </div>
-      {/* si il y a un message alors on l'affiche*/}
+     <div> {/* si il y a un message alors on l'affiche*/}
       {message !== "" && <p>{message}</p>}
       <button type="button" onClick={modifier}>
-
         {dis === true ? "Modifier" : "Valider les modifications"}
       </button>
+      </div>
+      <div>
       <button onClick ={() => {UserDelete(idUser)}}>Supprimer</button>
+      </div>
     </form>
   );
 };

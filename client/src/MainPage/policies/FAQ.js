@@ -1,10 +1,10 @@
 const FAQ = () => {
   return (
     <>
-      <section>
-        <h2> F.A.Q - Questions fréquentes</h2>
-        <article>
-          <h3>Quels sont les temps d’expédition pour vos produits ?</h3>
+      <section className="title">
+        <h1> F.A.Q - Questions fréquentes</h1>
+        <article className="policy">
+          <h2>Quels sont les temps d’expédition pour vos produits ?</h2>
           <p>
             Nous prenons jusqu'à 48 heures maximum pour traiter votre commande
             puis les produits sont envoyés en fabrication artisanale pour un
@@ -14,7 +14,7 @@ const FAQ = () => {
             Vous trouverez cette information sur la page de commande, elle est
             estimée selon les délais de prise en charge du transporteur.{" "}
           </p>
-          <h3>Puis-je annuler ou modifier ma commande ? </h3>
+          <h2>Puis-je annuler ou modifier ma commande ? </h2>
           <p>
             Si votre commande est déjà enregistrée et payée, il ne sera plus
             possible de le faire de votre côté. Toutefois, il est encore
@@ -23,7 +23,7 @@ const FAQ = () => {
             encore été traité, et ainsi rétractable nous pourrons vous en
             informer.{" "}
           </p>
-          <h3>J'ai changé d'avis sur le produit. Puis-je le renvoyer ? </h3>
+          <h2>J'ai changé d'avis sur le produit. Puis-je le renvoyer ? </h2>
           <p>
             Vous avez 14 jours pour changer d'avis. Pour pouvoir être retourné,
             votre article doit être inutilisé et dans l'état où vous l'avez
@@ -38,7 +38,7 @@ const FAQ = () => {
             3 à 10 jours ouvrés sont nécessaires pour que les fonds apparaissent
             à nouveau sur votre compte selon votre banque.{" "}
           </p>
-          <h3>Expédiez-vous partout dans le monde ? </h3>
+          <h2>Expédiez-vous partout dans le monde ? </h2>
           <p>
             Non, nous livrons uniquement en France métropolitaine et en Europe (
             Autriche, Belgique, Bulgarie, Croatie, Chypre, Tchéquie, Allemagne,
@@ -50,13 +50,13 @@ const FAQ = () => {
             Il vous suffit de préciser le pays de destination au moment de la
             commande en indiquant votre adresse de livraison.{" "}
           </p>
-          <h3>D’où expédions-nous votre produit ? </h3>
+          <h2>D’où expédions-nous votre produit ? </h2>
           <p>
             Notre entrepôt de confection est situé à Dakar au Sénégal et notre
             entrepôt de finition et d'expédition est situé à Villeneuve saint
             Georges, en France.{" "}
           </p>
-          <h3>Fournissez-vous des informations du suivi du produit ? </h3>
+          <h2>Fournissez-vous des informations du suivi du produit ? </h2>
           <p>
             Oui, une fois votre commande validée nous vous enverrons un mail de
             confirmation de commande. Ensuite, votre commande sera préparée puis
@@ -72,16 +72,16 @@ const FAQ = () => {
             réel de la localisation de votre colis. Au cas où vous ne trouviez
             pas, contactez-nous par email à contact@loveliesafrica.com
           </p>
-          <h3>
+          <h2>
             Il manque certains articles de ma commande, que se passe-t-il ?{" "}
-          </h3>
+          </h2>
           <p>
             Nos produits peuvent être expédiés séparément selon votre commande.
             Si celle-ci contient par exemple des articles de deux entrepôts
             différents, où de disponibilité de stock à des dates différentes, il
             y aura par conséquent deux livraisons.{" "}
           </p>
-          <h3>Mon colis est endommagé. Que puis-je faire? </h3>
+          <h2>Mon colis est endommagé. Que puis-je faire? </h2>
           <p>
             Au cas où le livreur vous présente un colis endommagé, nous vous
             invitons à vérifier le contenu du colis pour vous assurer que votre
@@ -90,10 +90,10 @@ const FAQ = () => {
             totalité et de nous contacter dans les meilleurs délais afin que
             nous puissions organiser un nouvel envoi.{" "}
           </p>
-          <h3>
+          <h2>
             J’ai reçu un article endommagé ou qui ne correspond pas au produit.
             Que puis-je faire ?{" "}
-          </h3>
+          </h2>
           <p>
             Si vous avez reçu un article défectueux ou qui ne correspond pas à
             votre commande, envoyez-nous simplement une image de l’article en
@@ -102,12 +102,12 @@ const FAQ = () => {
             procédure retour, nous vous enverrons un article de remplacement
             aussi vite que possible.{" "}
           </p>
-          <h3>Où êtes-vous situés ? </h3>
+          <h2>Où êtes-vous situés ? </h2>
           <p>Notre entrepôt est situé à Villeneuve saint Georges en France. </p>
-          <h3>
+          <h2>
             Je n’ai toujours pas reçu ma commande. Qu’est-ce qui prend autant de
             temps ?{" "}
-          </h3>
+          </h2>
           <p>
             Au cas où votre commande n'est pas arrivée à la date de livraison
             prévue, nous vous invitons à procéder aux vérifications suivantes
@@ -129,7 +129,7 @@ const FAQ = () => {
             effectué ces vérifications, veuillez nous contacter par email à
             l'adresse suivante : contact@loveliesafrica.com
           </p>
-          <h3>Avez-vous une politique de remboursement ? </h3>
+          <h2>Avez-vous une politique de remboursement ? </h2>
           <p>
             La garantie « satisfait ou remboursé » La couleur de l'article ne
             vous convient finalement pas, vous vous êtes trompé de taille, vous
@@ -147,7 +147,7 @@ const FAQ = () => {
             restent à votre charge. Pour plus d’informations, veuillez en lire
             davantage sur notre politique de remboursement.{" "}
           </p>
-          <h3>Je n'arrive pas à passer ma commande</h3>
+          <h2>Je n'arrive pas à passer ma commande</h2>
           <p>
             Pour passer votre commande, il vous suffit de vous rendre sur la
             page du produit concerné et ajouter les articles dans votre panier.
@@ -155,7 +155,7 @@ const FAQ = () => {
             toutefois vous rencontrez quelconque difficulté, n'hésitez pas à
             nous contacter via le tchat.{" "}
           </p>
-          <h3>J'ai besoin d'un renseignement concernant des articles</h3>
+          <h2>J'ai besoin d'un renseignement concernant des articles</h2>
           <p>
             Vous trouverez sur le site des fiches produit les plus complètes et
             détaillés possibles : description, caractéristiques, dimensions,
@@ -171,7 +171,7 @@ const FAQ = () => {
             contactez-nous à contact@loveliesafrica.com et nous vous l'enverrons
             par email dans les meilleurs délais.{" "}
           </p>
-          <h3>Comment utiliser un code promo ? </h3>
+          <h2>Comment utiliser un code promo ? </h2>
           <p>
             Pour utiliser un code promo, vous devez le renseigner dans le champ
             « Je dispose d'un code promo » au moment de valider votre commande,
@@ -182,7 +182,7 @@ const FAQ = () => {
             assurez-vous qu'il corresponde bien aux critères mentionnés dans
             l'offre promotionnelle et qu'il n'a pas expiré.{" "}
           </p>
-          <h3>Que faire si j'ai oublié d'entrer mon code promo ? </h3>
+          <h2>Que faire si j'ai oublié d'entrer mon code promo ? </h2>
           <p>
             Malheureusement nous ne pouvons pas modifier le montant d'une
             commande déjà payée une fois celle-ci enregistrée, nous ne pouvons
@@ -190,7 +190,7 @@ const FAQ = () => {
             Si votre code est toujours valable pour un prochain achat vous
             pourrez en bénéficier à condition de respecter sa date de validité.{" "}
           </p>
-          <h3>Comment puis-je obtenir un code promo ? </h3>
+          <h2>Comment puis-je obtenir un code promo ? </h2>
           <p>
             {" "}
             Nos codes promo sont visibles sur le site ou par le biais de nos

@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-//Variables
+//Constantes
 const NewAccountPage = () => {
   const [name, setName] = useState("");
   const [firstname, setFirstname] = useState("");
@@ -32,9 +32,6 @@ const NewAccountPage = () => {
     }
   };
 
-  // utilisateur envoi au formulaire (composant react) -> renvoi au controller (create account)
-  // -> qui renvoi dans l'insert into dans le userController (pour la BDD)
-
   //Insertion des informations dans la BDD
   const submit = () => {
     //Valeurs à inserer dans la BDD
@@ -45,19 +42,19 @@ const NewAccountPage = () => {
       password: password,
     };
 
-    // Gestion de la requête: je passe les infos au controller Users qui les renvoi à la BDD
+    // Gestion de la requête
     let req = new Request("http://localhost:9000/newAccountPage", {
       method: "post",
       //body natif à l'objet request
       body: JSON.stringify(datas),
 
       //Gestion des renvois des informations sous format json avec la propriété accept
-      //headers permet d'indiquer sous quel format la requête sera renvoyé avec la propriété accept sous format json
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
     });
+
     //Renvoi des valeurs sous la variable req pour le retour à vide
     fetch(req)
       .then((response) => response.json())
@@ -78,9 +75,12 @@ const NewAccountPage = () => {
 
   return (
     <>
-      <h1>Créer un compte</h1>
-      {/* si mon message est différent d'une chaine de caractère vide alors on affiche un message sinon on affiche rien*/}
-      {message !== "" && <p>{message}</p>}
+      <div>
+        <h1>Créer un compte</h1>
+        {/* si mon message est différent d'une chaine de caractère vide alors on affiche un message sinon on affiche rien*/}
+        {message !== "" && <p>{message}</p>}
+      </div>
+
       <form>
         <label htmlFor="name">Entrez votre nom</label>
         <input type="text" id="name" value={name} onChange={handleChange} />
@@ -100,15 +100,17 @@ const NewAccountPage = () => {
           value={password}
           onChange={handleChange}
         />
-        {/* Pour envoyer les infos dans la BDD, on appellera la méthode submit pour gérer toute la requête */}
         <button className="btn" type="button" onClick={submit}>
           Créer un compte
         </button>
       </form>
-      <p>
-        {/* Redirection si j'ai déja un compte */}
-        <a href="/connectPage">J'ai déjà un compte</a>
-      </p>
+
+      <div>
+        <p>
+          {/* Redirection si j'ai déja un compte */}
+          <a href="/connectPage">J'ai déjà un compte</a>
+        </p>
+      </div>
     </>
   );
 };

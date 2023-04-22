@@ -1,18 +1,19 @@
 const LegalNotice = () => {
   return (
     <>
-      <section>
+      <section className="title">
         <h1>Mentions légales</h1>
-        <article>
-          <p>
-            Conformément aux dispositions des articles 6-III et 19 de la Loi n°
-            2004-575 du 21 juin 2004 pour la Confiance dans l'économie
-            numérique, dite L.C.E.N., nous portons à la connaissance des
-            utilisateurs et visiteurs du site : www.loveliesafrica.com les
-            informations suivantes :{" "}
-          </p>
-          </article>
-          <article>
+        <p>
+          Conformément aux dispositions des articles 6-III et 19 de la Loi n°
+          2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique,
+          dite L.C.E.N., nous portons à la connaissance des utilisateurs et
+          visiteurs du site : www.loveliesafrica.com les informations suivantes
+          :{" "}
+        </p>
+      </section>
+
+      <section className="description">
+        <article className="article">
           <h2>ÉDITEUR</h2>
           <p>
             Le site www.loveliesafrica.com est la propriété exclusive de SAS
@@ -31,10 +32,10 @@ const LegalNotice = () => {
             contact@loveliesafrica.com
           </p>
         </article>
-        <article>
+        <article className="article">
           <h2>HEBERGEMENT</h2>
         </article>
-        <article>
+        <article className="article">
           <h2>DESCRIPTION DES SERVICES FOURNIS</h2>
           <p>
             Le site www.loveliesafrica.com a pour objet de fournir une
@@ -51,7 +52,7 @@ const LegalNotice = () => {
             ligne.{" "}
           </p>
         </article>
-        <article>
+        <article className="article">
           <h2>PROPRIÉTÉ INTELLECTUELLE ET CONTREFAÇONS</h2>
           <p>
             Le proprietaire du site est propriétaire des droits de propriété
@@ -68,7 +69,7 @@ const LegalNotice = () => {
             Intellectuelle.{" "}
           </p>
         </article>
-        <article>
+        <article className="article">
           <h2>LIENS HYPERTEXTES ET COOKIES</h2>
           <p>
             Le site www.loveliesafrica.com contient un certain nombre de liens
@@ -97,7 +98,7 @@ const LegalNotice = () => {
             Avancées et choisissez Désactiver les cookies. Validez sur Ok.{" "}
           </p>
         </article>
-        <article>
+        <article className="article">
           <h2>
             PROTECTION DES BIENS ET DES PERSONNES - GESTION DES DONNÉES
             PERSONNELLES

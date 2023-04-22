@@ -1,17 +1,18 @@
 const PrivatePolicy = () => {
   return (
     <>
-      <section>
+      <section className="title">
         <h1>Politique de confidentialité</h1>
-        <article>
-          <p>
-            La présente Politique de confidentialité décrit la façon dont vos
-            informations personnelles sont recueillies, utilisées et partagées
-            lorsque vous vous rendez sur www.loveliesafrica.com ou que vous y
-            effectuez un achat.{" "}
-          </p>
-        </article>
-        <article>
+        <p>
+          La présente Politique de confidentialité décrit la façon dont vos
+          informations personnelles sont recueillies, utilisées et partagées
+          lorsque vous vous rendez sur www.loveliesafrica.com ou que vous y
+          effectuez un achat.{" "}
+        </p>
+      </section>
+
+      <section className="description">
+        <article className="article">
           <h2>INFORMATIONS PERSONNELLES RECUEILLIES</h2>
           <p>
             Lorsque vous vous rendez sur le Site, nous recueillons
@@ -29,7 +30,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article>
+        <article className="article">
           <h2>FICHIERS TÉMOINS (COOKIES)</h2>
           <p>
             Les fichiers journaux suivent l'activité du Site et recueillent des
@@ -42,7 +43,6 @@ const PrivatePolicy = () => {
             fichiers électroniques qui enregistrent des informations sur la
             façon dont vous parcourez le Site.{" "}
           </p>
-
           <p>
             Par ailleurs, lorsque vous effectuez un achat par le biais du Site,
             nous recueillons certaines informations vous concernant, notamment
@@ -53,7 +53,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article>
+        <article className="article">
           <h2>COMMENT UTILISONS-NOUS VOS INFORMATIONS PERSONNELLES ?</h2>
           <p>
             En règle générale, nous utilisons les Informations sur la commande
@@ -67,7 +67,6 @@ const PrivatePolicy = () => {
             fournir des informations ou des publicités concernant nos produits
             ou services.{" "}
           </p>
-
           <p>
             Nous utilisons les Informations que nous recueillons pour évaluer
             les fraudes ou risques potentiels et, de manière plus générale, pour
@@ -76,7 +75,6 @@ const PrivatePolicy = () => {
             pour évaluer la réussite de nos campagnes de publicité et de
             marketing.{" "}
           </p>
-
           <p>
             Nous partageons vos Informations personnelles avec des tiers qui
             nous aident à les utiliser aux fins décrites précédemment. Par
@@ -91,7 +89,6 @@ const PrivatePolicy = () => {
             pouvez aussi désactiver Google Analytics ici :
             https://tools.google.com/dlpage/gaoptout.{" "}
           </p>
-
           <p>
             {" "}
             Enfin, il se peut que nous partagions aussi vos Informations
@@ -101,7 +98,8 @@ const PrivatePolicy = () => {
             protéger nos droits.{" "}
           </p>
         </article>
-        <article>
+
+        <article className="article">
           <h2>PUBLICITÉ COMPORTEMENTALE</h2>
           <p>
             Comme indiqué ci-dessus, nous utilisons vos Informations
@@ -115,7 +113,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article>
+        <article className="article">
           <h2>NE PAS SUIVRE</h2>
           <p>
             Veuillez noter que nous ne modifions pas la collecte de données de
@@ -124,7 +122,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article>
+        <article className="article">
           <h2>VOS DROITS</h2>
           <p>
             Si vous êtes résident(e) européen(ne), vous disposez d'un droit
