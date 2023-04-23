@@ -17,10 +17,15 @@ const FanPage = () => {
 
   return (
     <>
-      <section className="title">
+     <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
+      <section className="title terms">
         <h1>{fans.name}</h1>
       </section>
-      <section className="description">
+      <section className="detail">
         <div>
           <img className="photos" src={"/img/" + fans.image} alt={fans.name} />
         </div>
@@ -31,10 +36,10 @@ const FanPage = () => {
         </div>
       </section>
 
-      <section className="description">
+      <section className="detail">
         <p>{fans.description}</p>{" "}
       </section>
-      <section className="description">
+      <section className="features">
         <div>
           <h3>
             <i>&#9734;</i> Caractéristiques
@@ -80,7 +85,7 @@ const FanPage = () => {
         </div>
       </section>
 
-      <section className="description">
+      <section className="eventail">
         <div>
         <p>
           <strong>

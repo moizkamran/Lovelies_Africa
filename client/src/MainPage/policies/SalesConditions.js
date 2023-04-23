@@ -1,7 +1,12 @@
 const SalesConditions = () => {
   return (
     <>
-      <section className="title">
+      <section className="terms">
+        <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Conditions Générales de Ventes</h1>
         <p>
           Ce site web est exploité par Lovelies Premium Brand. Partout sur le
@@ -14,8 +19,8 @@ const SalesConditions = () => {
         </p>
       </section>
 
-      <section className="description">
-        <article className="article">
+      <section className="mandatory">
+        <article className="policy">
           <p>
             En visitant notre site et/ou en achetant quelque chose auprès de
             notre entreprise, vous prenez part à notre « Service » et acceptez
@@ -51,7 +56,60 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
+          <h2>1 – CONDITIONS D'UTILISATION DE LA BOUTIQUE EN LIGNE</h2>
+          <p>
+            En acceptant les présentes Conditions d'utilisation, vous déclarez
+            avoir atteint ou dépassé l'âge de la majorité dans votre région,
+            province ou État et nous avoir donné l'autorisation de permettre à
+            toute personne mineure à votre charge d'utiliser ce site.
+          </p>
+          <p>
+            Vous ne devez en aucune façon utiliser nos produits à des fins
+            illégales ou non autorisées, ni violer des lois de votre juridiction
+            lorsque vous utilisez le Service (y compris, sans toutefois s'y
+            limiter, les lois relatives aux droits d'auteur).
+          </p>
+          <p>
+            Vous ne devez pas transmettre de vers informatique, de virus ou tout
+            code de nature destructrice.
+          </p>
+          <p>
+            Une infraction ou une violation de n'importe laquelle des Conditions
+            entraînera la résiliation immédiate de vos Services.
+          </p>
+        </article>
+
+        <article className="policy">
+          <h2>2 – CONDITIONS GÉNÉRALES</h2>
+          <p>
+            Nous nous réservons le droit de refuser de servir quelqu'un à tout
+            moment et pour quelque raison que ce soit.
+          </p>
+          <p>
+            Vous comprenez que votre contenu (à l'exception des informations
+            relatives à votre carte de crédit) peut être transféré sans
+            chiffrement et que cela comprend (a) des transmissions sur plusieurs
+            réseaux ; et (b) des changements effectués dans le but de se
+            conformer et de s'adapter aux exigences techniques de la connexion
+            de réseaux ou d'appareils. Les informations de votre carte de crédit
+            sont toujours chiffrées lors de leur transfert sur les réseaux.
+          </p>
+          <p>
+            Vous acceptez de ne pas reproduire, dupliquer, copier, vendre,
+            revendre ou exploiter toute partie du Service, toute utilisation du
+            Service ou tout accès au Service, ou encore tout contact sur le site
+            web à travers lequel le Service est fourni, sans notre autorisation
+            écrite expresse.
+          </p>
+          <p>
+            Les titres utilisés dans le présent accord sont inclus à titre
+            indicatif uniquement et ne limiteront ni n'affecteront aucunement
+            ces Conditions.
+          </p>
+        </article>
+
+        <article className="policy">
           <h2> 3 – EXACTITUDE, EXHAUSTIVITÉ ET ACTUALITÉ DES INFORMATIONS</h2>
           <p>
             Nous ne saurions être tenus responsables si les informations
@@ -75,7 +133,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>4 – MODIFICATIONS DU SERVICE ET DES PRIX</h2>
 
           <p>Les prix de nos produits sont modifiables sans préavis. </p>
@@ -93,7 +151,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>5 – PRODUITS OU SERVICES</h2>
 
           <p>
@@ -127,7 +185,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>
             6 – EXACTITUDE DE LA FACTURATION ET DES INFORMATIONS DE COMPTE
           </h2>
@@ -158,7 +216,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>7 – OUTILS FACULTATIFS</h2>
           <p>
             Nous sommes susceptibles de vous fournir l'accès à des outils tiers
@@ -188,7 +246,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>8 – LIENS DE TIERS</h2>
           <p>
             Certains contenus, produits et services accessibles via notre
@@ -214,7 +272,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>9 – COMMENTAIRES, RETOURS D'EXPÉRIENCE ET AUTRES SOUMISSIONS</h2>
           <p>
             Si, à notre demande, vous soumettez des contenus spécifiques (par
@@ -252,7 +310,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>10 – INFORMATIONS PERSONNELLES</h2>
           <p>
             La transmission de vos informations personnelles sur notre boutique
@@ -260,7 +318,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>11 – ERREURS, INEXACTITUDES ET OMISSIONS</h2>
           <p>
             Il se peut qu'il y ait parfois, sur notre site ou dans le Service,
@@ -287,7 +345,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>12 – UTILISATIONS INTERDITES</h2>
           <p>
             En plus des autres interdictions énoncées dans les Conditions
@@ -318,7 +376,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>13 – EXCLUSION DE GARANTIES ET LIMITATION DE RESPONSABILITÉ</h2>
           <p>
             Nous ne garantissons, certifions ou déclarons en aucun cas que votre
@@ -370,7 +428,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>14 – INDEMNISATION</h2>
           <p>
             Vous acceptez d’indemniser, de défendre et de tenir Lovelies Premium
@@ -386,7 +444,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>15 – DISSOCIABILITÉ</h2>
           <p>
             Dans le cas où une quelconque disposition des présentes Conditions
@@ -398,7 +456,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>16 – RÉSILIATION</h2>
           <p>
             Les obligations et responsabilités engagées par les parties avant la
@@ -424,7 +482,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>17 – INTÉGRALITÉ DE L’ACCORD</h2>
           <p>
             Tout manquement de notre part à l’exercice ou à l’application d'un
@@ -448,7 +506,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>18 – LOI APPLICABLE</h2>
           <p>
             Les présentes Conditions d’utilisation, ainsi que tout accord
@@ -458,7 +516,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>19 – MODIFICATIONS APPORTÉES AUX CONDITIONS D’UTILISATION</h2>
           <p>
             Vous pouvez consulter la version la plus récente des Conditions
@@ -476,7 +534,7 @@ const SalesConditions = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>20 – COORDONNÉES</h2>
           <p>
             Les questions relatives aux Conditions d’utilisation doivent nous

@@ -1,7 +1,12 @@
 const FAQ = () => {
   return (
     <>
-      <section className="title">
+      <section className="terms">
+        <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1> F.A.Q - Questions fréquentes</h1>
         <article className="policy">
           <h2>Quels sont les temps d’expédition pour vos produits ?</h2>
@@ -163,7 +168,7 @@ const FAQ = () => {
             besoin d'informations complémentaires n'hésitez pas à nous contacter
             via notre tchat ou par email à contact@loveliesafrica.com
           </p>
-          <h3>Où puis-je trouver ma facture ? </h3>
+          <h2>Où puis-je trouver ma facture ? </h2>
           <p>
             Pour des raisons d'éthiques environnementales, nous n'imprimons pas
             les factures sur papier pour les joindre dans les colis. Ainsi, si

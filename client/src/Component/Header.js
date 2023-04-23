@@ -4,10 +4,9 @@ const Header = () => {
   return (
     <header id="header">
       <section className="infos">
-        <p>
-          {" "}
-          Bienvenue sur notre boutique réservée aux professionnels B to B !
-        </p>
+       <strong><p>
+          Bienvenue sur notre boutique réservée aux professionnels B to B 
+        </p></strong>
       </section>
       <section className="branding">
         <img

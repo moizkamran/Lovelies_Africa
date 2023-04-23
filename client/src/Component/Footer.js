@@ -2,8 +2,6 @@ const Footer = () => {
   return (
     <footer id="footer">
       <section className="nous">
-        <h2>Pourquoi nous choisir ?</h2>
-
         <article className="adverts">
           <img
             className="picto"

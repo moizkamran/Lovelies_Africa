@@ -75,7 +75,12 @@ const NewAccountPage = () => {
 
   return (
     <>
-      <div>
+      <div className="terms">
+      <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Créer un compte</h1>
         {/* si mon message est différent d'une chaine de caractère vide alors on affiche un message sinon on affiche rien*/}
         {message !== "" && <p>{message}</p>}
@@ -100,7 +105,7 @@ const NewAccountPage = () => {
           value={password}
           onChange={handleChange}
         />
-        <button className="btn" type="button" onClick={submit}>
+        <button className="link" type="button" onClick={submit}>
           Créer un compte
         </button>
       </form>

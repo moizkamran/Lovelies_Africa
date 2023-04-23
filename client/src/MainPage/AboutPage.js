@@ -1,9 +1,14 @@
 const AboutPage = () => {
   return (
     <>
-      <section className="title">
+      <section className="title terms">
+      <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
           <h1>À propos de Lovelies Africa</h1>
-          <p>
+          <p className="pitch">
             Lovelies Africa est la marque B to B de Lovelies Premium Brand,
             entreprise passionnée e-commerce engagée dans les actions
             caritatives humanitaires.
@@ -47,7 +52,7 @@ const AboutPage = () => {
               Faites-vous plaisir tout en faisant une bonne action.
             </p>
             <button>
-              <a href="/association">
+              <a className="link" href="/association">
                 Je découvre l'association Lovelies People
               </a>
             </button>

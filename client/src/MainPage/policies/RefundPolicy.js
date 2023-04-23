@@ -1,7 +1,12 @@
 const RefundPolicy = () => {
   return (
     <>
-      <section className="title">
+      <section className="terms">
+        <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Politique de retour et de remboursement</h1>
         <p>
           Notre politique dure 14 jours. Si plus de 14 jours se sont écoulés
@@ -10,8 +15,8 @@ const RefundPolicy = () => {
         </p>
       </section>
 
-      <section className="description">
-        <article className="article">
+      <section className="mandatory">
+        <article className="policy">
           <p>
             La garantie « satisfait ou remboursé » : la couleur de l'article ne
             vous convient finalement pas, vous vous êtes trompés de taille, vous
@@ -43,7 +48,7 @@ const RefundPolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>Remboursements </h2>
           <p>
             Une fois votre retour reçu et inspecté, nous vous adresserons un
@@ -55,7 +60,7 @@ const RefundPolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>Remboursements retardés ou manquants </h2>
           <p>
             Si vous n'avez pas encore reçu de remboursement, revérifiez d'abord
@@ -72,7 +77,7 @@ const RefundPolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>Échanges </h2>
           <p>
             Nous ne remplaçons que les articles initialement défectueux ou
@@ -83,7 +88,7 @@ const RefundPolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>Cadeaux</h2>
           <p>
             Si l'article a été marqué comme cadeau au moment de l'achat et s'il
@@ -101,7 +106,7 @@ const RefundPolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>Expédition</h2>
           <p>
             Pour retourner votre produit, vous devez l'envoyer à l'adresse

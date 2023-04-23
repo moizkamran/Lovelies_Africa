@@ -64,32 +64,41 @@ const ConnectPage = () => {
 
   return (
     <>
-      <div>
+      <div className="terms">
+        <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Se connecter</h1>
         {/* Affichage du message */}
         <p>{message}</p>
       </div>
 
       <form>
-        <label htmlFor="email">Votre email</label>
-        <input type="email" id="email" value={email} onChange={changeEmail} />
-
-        <label htmlFor="password">Votre mot de passe</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={changePassword}
-        />
-
-        <button className="btn" type="button" onClick={submit}>
+        <div>
+          <label htmlFor="email">Votre email</label>
+          <input type="email" id="email" value={email} onChange={changeEmail} />
+        </div>
+        <div>
+          <label htmlFor="password">Votre mot de passe</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={changePassword}
+          />
+        </div>
+        <button className="link" type="button" onClick={submit}>
           Se connecter
         </button>
       </form>
 
       <div>
         <p>
-          <a href="/newAccountPage">Créer un compte</a>
+          <a className="link" href="/newAccountPage">
+            Créer un compte
+          </a>
         </p>
       </div>
     </>

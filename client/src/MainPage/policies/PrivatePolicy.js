@@ -1,7 +1,12 @@
 const PrivatePolicy = () => {
   return (
     <>
-      <section className="title">
+      <section className="terms">
+        <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Politique de confidentialité</h1>
         <p>
           La présente Politique de confidentialité décrit la façon dont vos
@@ -11,8 +16,8 @@ const PrivatePolicy = () => {
         </p>
       </section>
 
-      <section className="description">
-        <article className="article">
+      <section className="mandatory">
+        <article className="policy">
           <h2>INFORMATIONS PERSONNELLES RECUEILLIES</h2>
           <p>
             Lorsque vous vous rendez sur le Site, nous recueillons
@@ -30,7 +35,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>FICHIERS TÉMOINS (COOKIES)</h2>
           <p>
             Les fichiers journaux suivent l'activité du Site et recueillent des
@@ -53,7 +58,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>COMMENT UTILISONS-NOUS VOS INFORMATIONS PERSONNELLES ?</h2>
           <p>
             En règle générale, nous utilisons les Informations sur la commande
@@ -99,7 +104,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>PUBLICITÉ COMPORTEMENTALE</h2>
           <p>
             Comme indiqué ci-dessus, nous utilisons vos Informations
@@ -113,7 +118,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>NE PAS SUIVRE</h2>
           <p>
             Veuillez noter que nous ne modifions pas la collecte de données de
@@ -122,7 +127,7 @@ const PrivatePolicy = () => {
           </p>
         </article>
 
-        <article className="article">
+        <article className="policy">
           <h2>VOS DROITS</h2>
           <p>
             Si vous êtes résident(e) européen(ne), vous disposez d'un droit

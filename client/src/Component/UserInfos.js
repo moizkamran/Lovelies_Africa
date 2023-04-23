@@ -31,7 +31,6 @@ const UserInfos = () => {
         setName(response.name);
         setFirstname(response.firstname);
         setEmail(response.email);
-        setPassword(response.password);
       });
   }, [idUser]);
 
@@ -165,13 +164,13 @@ const UserInfos = () => {
         {" "}
         {/* si il y a un message alors on l'affiche*/}
         {message !== "" && <p>{message}</p>}
-        <button type="button" onClick={edit}>
+        <button className="link" type="button" onClick={edit}>
           {disable === true ? "Modifier" : "Valider les modifications"}
         </button>
       </div>
 
       <div>
-        <button
+        <button className="link" type="button"
           onClick={() => {
             UserDelete(idUser);
           }}

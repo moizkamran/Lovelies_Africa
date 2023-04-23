@@ -1,9 +1,14 @@
 const ContactPage = () => {
   return (
     <>
-      <section className="title">
+      <section className="title terms">
+      <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Nos coordonnées de contact</h1>
-        <p>SAS LOVELIES PREMIUM BRAND</p>
+        <p>LOVELIES PREMIUM BRAND</p>
         <p>66 rue de Paris</p>
 
         <p>94190 Villeneuve saint Georges</p>
@@ -20,7 +25,7 @@ const ContactPage = () => {
         </strong>
       </section>
 
-      <section className="description">
+      <section className="terms">
         <h2> F.A.Q - Questions fréquentes</h2>
         <article className="policy">
           <h3>Quels sont les temps d’expédition pour vos produits ?</h3>

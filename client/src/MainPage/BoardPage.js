@@ -3,11 +3,16 @@ import UserInfos from "../Component/UserInfos";
 const BoardPage = () => {
   return (
     <>
-      <section className="title">
+      <section className="title terms">
+      <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Mon compte</h1>
       </section>
 
-      <section className="infos">
+      <section className="commandes">
         <div>
           <h2>Mes informations</h2>
           {/* affichage du composant userinfo */}

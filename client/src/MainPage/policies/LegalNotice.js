@@ -1,7 +1,12 @@
 const LegalNotice = () => {
   return (
     <>
-      <section className="title">
+      <section className="terms">
+        <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
         <h1>Mentions légales</h1>
         <p>
           Conformément aux dispositions des articles 6-III et 19 de la Loi n°
@@ -12,8 +17,8 @@ const LegalNotice = () => {
         </p>
       </section>
 
-      <section className="description">
-        <article className="article">
+      <section className="mandatory">
+        <article className="policy">
           <h2>ÉDITEUR</h2>
           <p>
             Le site www.loveliesafrica.com est la propriété exclusive de SAS
@@ -32,10 +37,10 @@ const LegalNotice = () => {
             contact@loveliesafrica.com
           </p>
         </article>
-        <article className="article">
+        <article className="policy">
           <h2>HEBERGEMENT</h2>
         </article>
-        <article className="article">
+        <article className="policy">
           <h2>DESCRIPTION DES SERVICES FOURNIS</h2>
           <p>
             Le site www.loveliesafrica.com a pour objet de fournir une
@@ -52,7 +57,7 @@ const LegalNotice = () => {
             ligne.{" "}
           </p>
         </article>
-        <article className="article">
+        <article className="policy">
           <h2>PROPRIÉTÉ INTELLECTUELLE ET CONTREFAÇONS</h2>
           <p>
             Le proprietaire du site est propriétaire des droits de propriété
@@ -69,7 +74,7 @@ const LegalNotice = () => {
             Intellectuelle.{" "}
           </p>
         </article>
-        <article className="article">
+        <article className="policy">
           <h2>LIENS HYPERTEXTES ET COOKIES</h2>
           <p>
             Le site www.loveliesafrica.com contient un certain nombre de liens
@@ -98,7 +103,7 @@ const LegalNotice = () => {
             Avancées et choisissez Désactiver les cookies. Validez sur Ok.{" "}
           </p>
         </article>
-        <article className="article">
+        <article className="policy">
           <h2>
             PROTECTION DES BIENS ET DES PERSONNES - GESTION DES DONNÉES
             PERSONNELLES

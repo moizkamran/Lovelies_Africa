@@ -22,22 +22,26 @@ const FansPage = () => {
 
   return (
     <>
+     <img
+          className="bandeau"
+          src="../img/conception/bandeau.jpg"
+          alt="bandeau"
+        />
       {category.map((category, i) => (
-        <section className="category" key={i}>
+        <section className="terms" key={i}>
+            <h1>{category.name}</h1>
+          <p className="pitch">{category.description}</p>
           <img
-            className="photos"
+            className="photos description article"
             src={"/img/" + category.image}
             alt={category.name}
           />
-          <h2>{category.name}</h2>
-          <p>{category.description}</p>
-
-          <section className="fans">
+          <section className="description article">
             {fans.map(
               (fans, i) =>
                 fans.category_id === category.id && (
                   <article>
-                    <h3>{fans.name}</h3>
+                    <h2>{fans.name}</h2>
                     <div>
                       <img
                         className="photos"
@@ -47,7 +51,7 @@ const FansPage = () => {
                     </div>
                     <div>
                       <button>
-                        <a className="btn" href={"/fans/" + fans.id}>
+                        <a className="link" href={"/fans/" + fans.id}>
                           Je découvre ce produit
                         </a>
                       </button>

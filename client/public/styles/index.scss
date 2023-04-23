@@ -1,45 +1,17 @@
+
+//**********// GÉNÉRAL //**********//
+//****************************************************************************************************************************************
+
 @font-face {
     font-family: "font1" ;
     src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
-}
-
- 
-
-$color1: black;
-$color2: rgba(255, 234, 0, 0.63);
-$color3: white;
-
-body{
-    font-family: 'Times New Roman', Times, serif;
-
-};
-
-
-
-li {
-    display: flex;
-    list-style: none;
-    
-};
-
-//Images
-
-#logo{
-    width:200px;
-}
-.photos{
-    width: 500px;
-}
-
-.picto{
-    width: 100px;
-    display:flex;
 }
 
 @mixin center{
     display:flex;
     justify-content: center;
     align-items:center;
+    text-align: center;
 }
 @mixin flex{
     display:flex;
@@ -47,57 +19,81 @@ li {
     align-items: center;
 }
 
-.infos{
-   @include center;
-  
+
+* {
+    box-sizing: border-box;
 }
 
-.branding {
+#root{
+    max-width:1400px;
+}
+
+body{
+    background-color: whitesmoke;
+    max-width:1400px;
+    margin: 0;
+}
+
+.container{
+    max-width:1400px;
+    margin:0px;
+}
+
+h1{
     @include center;
+    text-align: center;
+    font-size: 30px;
 }
 
-.politiques ul {
-    @include flex;
+h2{
+    font-size: 25px;
 }
 
-.category img {
-    width:500px;
+h3{
+    font-size: 20px;
 }
-.fans img {
+
+title{
+    padding:10px;
+    margin: auto;
+}
+
+li {
+    display: flex;
+    list-style: none; 
+}
+
+.photos{
     width: 500px;
 }
 
-img_preorder {
-    width: 1000px;
-    height: 1000px;
+button {
+background-color:rgba(255, 238, 124, 0.927);
+border-color: white;
+margin: 2px;
+padding: 2px;
 }
 
-.description{
-    display:flex
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
-.article{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    width: auto;
-    height: auto;
-    padding:2em;
-    margin: auto;
 
-
-}
-article .div{
-    display:block;
-    justify-content:center;
-    align-items: center;
-}
+//**********// HEADER //**********//
+//****************************************************************************************************************************************
 #header{
     background-color: black;
+    max-width: 1400px;
+    margin: 0px;
     p{
         color: white
     }
-   
 }
+
+#logo{
+    width:200px;
+};
 
 nav ul{
     @include flex();
@@ -105,40 +101,194 @@ nav ul{
     a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
     &:hover{ color: rgba(242, 213, 25, 0.927);
-
-    }
-   
     };
+    };
+};
+
+.infos{
+    @include center;
+   
+ };
+
+ .branding {
+    @include center;
+};
+
+//**********// BODY //**********//
+//****************************************************************************************************************************************
+
+//* MAIN PAGE *//
+
+//HOMEPAGE
+.carroussel{
+    width: 500px;
+    height: 500px;
+    margin: 2em 0;
+};
+
+.pitch{
+    text-align: center;
+    // font-weight: lighter;
+    font-style: italic;
 }
 
-body{
-    background-color: whitesmoke;
-    
+.description{
+    display:flex;
+    flex-wrap: wrap;
+     background-color: rgb(32, 32, 32);
+     margin: 2em 0;
+     h2{
+        text-align: center;
+        text-transform:uppercase;
+        color:black;
+        background-color: rgb(141, 63, 50);
+        padding: 2px;
+        margin:2px;
+     }
+     p{
+        padding: 2px;
+        margin: 2px;
+        font-weight: larger;
+        text-align: center;
+     }
+};
+
+.article{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height: auto;
+    padding:20px;
+    margin: auto;
+   
+    color: white;
 }
 
+article .div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+}
+
+//FANS PAGE
+.category img {
+    width:500px;
+}
+
+.fans img {
+    width: 500px;
+}
+
+//FAN PAGE
+img_preorder {
+    width: 1000px;
+    height: 1000px;
+}
+
+//* POLICIES PAGES *//
+
+.policy h2 h3{
+    font-size: 20px;
+    color: maroon
+}
+
+.politiques ul {
+    @include flex;
+}
+.terms {
+    text-align:justify;
+}
+.mandatory {
+    text-align:justify;
+}
+
+.bandeau {
+    width: 1376px;
+height: 400px;
+       
+   }
+.terms h1{
+        font-weight: bold;
+        text-transform:uppercase;
+        color: rgb(180, 99, 85);
+        background-color: black;
+    }
+
+//**********// FOOTER //**********//
+//****************************************************************************************************************************************
 #footer{
     background-color: black;
-    .nous{display: flex
-    };
+    max-width: 1400px;
+    margin: 0px;
+h3{
+    font-size: 15px;
+}
+p {
+    font-size: 12px;
+}
+    .nous{
+        display: flex;
+        color: white;
+    }
+
     .adverts{
         display:block;
         justify-content: center;
         align-items: justify;
         color: white;
         padding: 2em;
-    };
-    ul{
-        padding:2em;
     }
+
+    ul{
+        padding:2em; 
+       @include flex;
+    }
+
     a{
         color: white;
         text-decoration: none;
-        
-    };
+        &:hover{ color: rgba(242, 213, 25, 0.927);
+        }
+    }
+    .picto{
+        width: 100px;
+        display:flex;
+    }
 };
 
-.carroussel{
-    width: 500px;
-    height: 500px;
-}
+//**********// MEDIA QUERIES //**********//
+//****************************************************************************************************************************************
+
+//VERSION TABLETTE
+
+@media screen and (max-width: 1200px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+	main {
+		flex-wrap: wrap;
+	}
+	article {
+		width: 50%;
+	}
+};
+
+//VERSION MOBILE
+
+@media screen and (max-width: 780px) {
+   nav ul {
+        display:flex;
+        justify-content:center;
+        text-align:center;
+    }
+	article {
+		width: 100%;
+	}
+};
+
+
+   
