@@ -20,7 +20,7 @@ const UserInfos = () => {
   //State de gestion d'état de désactivation du formulaire
   const [disable, setDisable] = useState(true);
 
-  //les données issues du state global
+  //State des données issues du state global
   const { idUser } = useSelector((state) => state);
 
   //Récupération de l'utilisateur côté serveur
@@ -159,17 +159,13 @@ const UserInfos = () => {
           onChange={handleChange}
         />
       </div>
-
-      <div>
-        {" "}
+    
         {/* si il y a un message alors on l'affiche*/}
         {message !== "" && <p>{message}</p>}
         <button className="link" type="button" onClick={edit}>
           {disable === true ? "Modifier" : "Valider les modifications"}
         </button>
-      </div>
-
-      <div>
+    
         <button className="link" type="button"
           onClick={() => {
             UserDelete(idUser);
@@ -177,7 +173,6 @@ const UserInfos = () => {
         >
           Supprimer
         </button>
-      </div>
     </form>
   );
 };

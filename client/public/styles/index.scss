@@ -194,6 +194,8 @@ img_preorder{
 
 .features h3{
     background-color: rgb(180, 99, 85);
+    padding: 2px;
+    margin: 1px 0;
 }
 
 //CONNECT PAGE
@@ -305,7 +307,7 @@ form div{
 
 //VERSION TABLETTE
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   
     .container{
         flex-direction: column;

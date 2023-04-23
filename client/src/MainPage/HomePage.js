@@ -94,15 +94,7 @@ const Home = () => {
         </article>
       </section>
 
-      <section>
-        <h2>
-          La voici, la voila... La Dakaroise... Regardez la...
-        </h2>
-        <video poster="../img/conception/logo_noir.jpg" controls>
-          <source src="/client/public/medias/video_violet.mov" autoPlay loop muted type="video/mov" />
-        </video>
-      </section>
-        <video src="" autoPlay loop muted></video>
+     
     </>
   );
 };

@@ -17,11 +17,11 @@ const FanPage = () => {
 
   return (
     <>
-     <img
-          className="bandeau"
-          src="../img/conception/bandeau.jpg"
-          alt="bandeau"
-        />
+      <img
+        className="bandeau"
+        src="../img/conception/bandeau.jpg"
+        alt="bandeau"
+      />
       <section className="title terms">
         <h1>{fans.name}</h1>
       </section>
@@ -87,29 +87,29 @@ const FanPage = () => {
 
       <section className="eventail">
         <div>
-        <p>
-          <strong>
-            <i>&#9993;</i> Pour tout achat contactez nous à{" "}
-            <a href="mailto:contact@lovelies.africa.com">
-              contact@loveliesafrica.com
-            </a>{" "}
-            afin de recevoir le formulaire de pré-commande.
-          </strong>
-        </p>
+          <p>
+            <strong>
+              <i>&#9993;</i> Pour tout achat contactez nous à{" "}
+              <a href="mailto:contact@lovelies.africa.com">
+                contact@loveliesafrica.com
+              </a>{" "}
+              afin de recevoir le formulaire de pré-commande.
+            </strong>
+          </p>
         </div>
         <div>
-        <img
-          className="photos"
-          src="../img/formulaire/form_buyer.jpg"
-          alt=" infos acheteur formulaire de précommande"
-        />
+          <img
+            className="photos"
+            src="../img/formulaire/form_buyer.jpg"
+            alt=" infos acheteur formulaire de précommande"
+          />
         </div>
         <div>
-        <img
-          className="photos"
-          src="../img/formulaire/form_order.jpg"
-          alt=" infos commande formulaire de précommande"
-        />
+          <img
+            className="photos"
+            src="../img/formulaire/form_order.jpg"
+            alt=" infos commande formulaire de précommande"
+          />
         </div>
       </section>
     </>
