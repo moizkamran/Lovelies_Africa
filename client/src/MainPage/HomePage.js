@@ -36,25 +36,6 @@ const Home = () => {
   </button>
 </div>
 
-      {/* <section className="description">
-        <article className="article">
-          <h2>Détendez-vous grâce à l’éventail La Dakaroise !</h2>
-          <p>
-            Emportez-le partout avec vous, il vous apportera fraîcheur grâce à
-            son corps robuste et léger.
-            Il est refermable dans sa pochette, ce qui en fait un ventilateur à
-            main et un allié parfait dans votre sac.
-          </p>
-        </article>
-        <article className="article">
-          <img
-            className="photos"
-            src="../img/product/complete_violet_transparent.png"
-            alt="éventail violet"
-          />
-        </article>
-      </section> */}
-
       <section className="description">
         <article className="article">
           <img
@@ -113,7 +94,7 @@ const Home = () => {
         </article>
       </section>
 
-      {/* <section>
+      <section>
         <h2>
           La voici, la voila... La Dakaroise... Regardez la...
         </h2>
@@ -121,7 +102,7 @@ const Home = () => {
           <source src="/client/public/medias/video_violet.mov" autoPlay loop muted type="video/mov" />
         </video>
       </section>
-        <video src="" autoPlay loop muted></video> */}
+        <video src="" autoPlay loop muted></video>
     </>
   );
 };

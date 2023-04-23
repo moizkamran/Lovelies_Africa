@@ -37,6 +37,14 @@ const AssociationPage = () => {
         </article>
 
         <article className="article">
+          <img
+            className="photos"
+            src="../img/conception/enfants2.jpg"
+            alt="enfants à l'école"
+          />
+        </article>
+
+        <article className="article">
           <h2>Changer des vies ne serait-ce que par un sourire</h2>
           <p>
             Tout au long de notre aventure, nous projetons de venir en aide à
@@ -49,13 +57,7 @@ const AssociationPage = () => {
           </button>
         </article>
 
-        <article className="article">
-          <img
-            className="photos"
-            src="../img/conception/enfants2.jpg"
-            alt="enfants à l'école"
-          />
-        </article>
+       
       </section>
 
       <section className="description">
@@ -76,6 +78,14 @@ const AssociationPage = () => {
         </article>
 
         <article className="article">
+          <img
+            className="photos"
+            src="../img/conception/villageoise.jpg"
+            alt="villageoise"
+          />
+        </article>
+
+        <article className="article">
           <h2>Car chacun peut apporter sa pierre à l'édifice</h2>
           <p>
             Nos prochaines missions consisteront à la plantation d'arbres et
@@ -86,14 +96,6 @@ const AssociationPage = () => {
           <button>
             <a className="link" href="/contact">J'offre une donation</a>
           </button>
-        </article>
-
-        <article className="article">
-          <img
-            className="photos"
-            src="../img/conception/villageoise.jpg"
-            alt="villageoise"
-          />
         </article>
       </section>
     </>

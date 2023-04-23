@@ -21,7 +21,7 @@ const Nav = () => {
           <a href="/connectPage">Connexion</a>
         </li>
         <li>
-          <a href="/disconnectPage">Deconnexion</a>
+          <a href="/disconnectPage">Déconnexion</a>
         </li>
       </ul>
     </nav>

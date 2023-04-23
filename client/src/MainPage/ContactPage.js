@@ -2,31 +2,34 @@ const ContactPage = () => {
   return (
     <>
       <section className="title terms">
-      <img
+        <img
           className="bandeau"
           src="../img/conception/bandeau.jpg"
           alt="bandeau"
         />
         <h1>Nos coordonnées de contact</h1>
-        <p>LOVELIES PREMIUM BRAND</p>
-        <p>66 rue de Paris</p>
-
-        <p>94190 Villeneuve saint Georges</p>
-        <strong>
-          <p>
-            <i>&#9998;</i>
-            Pour toute commande ou demande d'informations, veuillez nous envoyer
-            un mail à{" "}
-            <a href="mailto:contact@lovelies.africa.com">
-              contact@loveliesafrica.com
-            </a>{" "}
-            et nous reviendrons vers vous dans un délai de 48 heures maximum.
-          </p>
-        </strong>
+        <div className="pitch coordonnées">
+          <p>LOVELIES PREMIUM BRAND</p>
+          <p>66 rue de Paris</p>
+          <p>94190 Villeneuve saint Georges</p>
+        </div>
+        <div className="pitch">
+          <strong>
+            <p>
+              <i>&#9998;</i>
+              Pour toute commande ou demande d'informations, veuillez nous
+              envoyer un mail à{" "}
+              <a href="mailto:contact@lovelies.africa.com">
+                contact@loveliesafrica.com
+              </a>{" "}
+              et nous reviendrons vers vous dans un délai de 48 heures maximum.
+            </p>
+          </strong>
+        </div>
       </section>
 
       <section className="terms">
-        <h2> F.A.Q - Questions fréquentes</h2>
+        <h2 className="highlight"> F.A.Q - Questions fréquentes</h2>
         <article className="policy">
           <h3>Quels sont les temps d’expédition pour vos produits ?</h3>
           <p>

@@ -77,11 +77,11 @@ const ConnectPage = () => {
 
       <form>
         <div>
-          <label htmlFor="email">Votre email</label>
+          <label htmlFor="email">Email</label>
           <input type="email" id="email" value={email} onChange={changeEmail} />
         </div>
         <div>
-          <label htmlFor="password">Votre mot de passe</label>
+          <label htmlFor="password">Mot de passe</label>
           <input
             type="password"
             id="password"
@@ -89,18 +89,21 @@ const ConnectPage = () => {
             onChange={changePassword}
           />
         </div>
+        <div>
         <button className="link" type="button" onClick={submit}>
           Se connecter
         </button>
-      </form>
-
-      <div>
+        </div>
+        <div>
         <p>
-          <a className="link" href="/newAccountPage">
+          <a className="lien" href="/newAccountPage">
             Créer un compte
           </a>
         </p>
       </div>
+      </form>
+
+     
     </>
   );
 };

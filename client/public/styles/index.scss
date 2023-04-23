@@ -2,9 +2,9 @@
 //**********// GÉNÉRAL //**********//
 //****************************************************************************************************************************************
 
-@font-face {
-    font-family: "font1" ;
-    src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+@font-face{
+    font-family: "font1";
+ src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
 }
 
 @mixin center{
@@ -19,9 +19,9 @@
     align-items: center;
 }
 
-
 * {
     box-sizing: border-box;
+    font-family: 'Gill Sans','Gill Sans MT', 'Trebuchet MS', 'Calibri','sans-serif', 'font1';
 }
 
 #root{
@@ -36,7 +36,7 @@ body{
 
 .container{
     max-width:1400px;
-    margin:0px;
+    margin:5px 0;
 }
 
 h1{
@@ -58,7 +58,7 @@ title{
     margin: auto;
 }
 
-li {
+li{
     display: flex;
     list-style: none; 
 }
@@ -67,9 +67,9 @@ li {
     width: 500px;
 }
 
-button {
-background-color:rgba(255, 238, 124, 0.927);
-border-color: white;
+button{
+background-color:rgba(204, 123, 123, 0.912);
+border-color: rgb(255, 196, 21);
 margin: 2px;
 padding: 2px;
 }
@@ -80,63 +80,67 @@ padding: 2px;
     font-weight: bolder;
 }
 
+.lien{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
 //**********// HEADER //**********//
 //****************************************************************************************************************************************
+
 #header{
     background-color: black;
     max-width: 1400px;
     margin: 0px;
     p{
-        color: white
+        color: white;
     }
 }
 
 #logo{
     width:200px;
-};
+}
 
 nav ul{
     @include flex();
     padding: 2em;
-    a {
+    a{
     color: white;
     text-decoration: none;
-    font-weight: bold;
+   font-size: larger;
     &:hover{ color: rgba(242, 213, 25, 0.927);
-    };
-    };
-};
+    }
+    }
+}
 
 .infos{
-    @include center;
-   
- };
+    @include center; 
+}
 
- .branding {
+ .branding{
     @include center;
-};
+}
 
 //**********// BODY //**********//
 //****************************************************************************************************************************************
 
-//* MAIN PAGE *//
+//* DOSSIER MAIN PAGE *//
 
 //HOMEPAGE
 .carroussel{
     width: 500px;
     height: 500px;
     margin: 2em 0;
-};
+}
 
 .pitch{
     text-align: center;
-    // font-weight: lighter;
     font-style: italic;
 }
 
 .description{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
      background-color: rgb(32, 32, 32);
      margin: 2em 0;
      h2{
@@ -153,7 +157,7 @@ nav ul{
         font-weight: larger;
         text-align: center;
      }
-};
+}
 
 .article{
     display:flex;
@@ -163,7 +167,6 @@ nav ul{
     height: auto;
     padding:20px;
     margin: auto;
-   
     color: white;
 }
 
@@ -175,79 +178,112 @@ article .div{
 }
 
 //FANS PAGE
-.category img {
+.category img{
     width:500px;
 }
 
-.fans img {
+.fans img{
     width: 500px;
 }
 
 //FAN PAGE
-img_preorder {
+img_preorder{
     width: 1000px;
     height: 1000px;
 }
 
-//* POLICIES PAGES *//
+.features h3{
+    background-color: rgb(180, 99, 85);
+}
 
-.policy h2 h3{
+//CONNECT PAGE
+form{
+    display:block;
+    background-color: rgb(216, 181, 181);
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding: 3px;
+    margin: 0;
+    width: 50%;
+    height: 70px;
+    label{
+        font-weight: bolder;
+    }
+}
+
+//CONTACT PAGE
+.coordonnées{
+    font-size: larger;
+}
+
+.highlight{
+    background-color: rgb(180, 99, 85);
+}
+
+.policy h3{
+    color: maroon;
+}
+
+//* DOSSIER POLICIES PAGES *//
+
+.policy h2{
     font-size: 20px;
-    color: maroon
+    color: maroon;
 }
 
-.politiques ul {
-    @include flex;
-}
-.terms {
-    text-align:justify;
-}
-.mandatory {
+.terms{
     text-align:justify;
 }
 
-.bandeau {
+.mandatory{
+    text-align:justify;
+}
+
+.bandeau{
     width: 1376px;
-height: 400px;
-       
-   }
+    height: 400px;
+}
+
 .terms h1{
-        font-weight: bold;
         text-transform:uppercase;
         color: rgb(180, 99, 85);
         background-color: black;
-    }
+}
 
 //**********// FOOTER //**********//
 //****************************************************************************************************************************************
+
 #footer{
     background-color: black;
     max-width: 1400px;
     margin: 0px;
-h3{
+    h3{
     font-size: 15px;
-}
-p {
+    }
+    p{
     font-size: 12px;
-}
+    }
     .nous{
         display: flex;
         color: white;
     }
-
     .adverts{
-        display:block;
+        display:inline-block;
         justify-content: center;
-        align-items: justify;
+        align-items: center;
         color: white;
         padding: 2em;
+        margin: 0;
     }
-
     ul{
         padding:2em; 
        @include flex;
     }
-
     a{
         color: white;
         text-decoration: none;
@@ -258,7 +294,11 @@ p {
         width: 100px;
         display:flex;
     }
-};
+
+    .politiques ul {
+        @include flex;
+    }
+}
 
 //**********// MEDIA QUERIES //**********//
 //****************************************************************************************************************************************
@@ -266,29 +306,81 @@ p {
 //VERSION TABLETTE
 
 @media screen and (max-width: 1200px) {
-    nav ul {
-        flex-wrap: wrap;
+  
+    .container{
+        flex-direction: column;
     }
-	main {
-		flex-wrap: wrap;
+
+    .bandeau{
+        width: 1000px;
+        height: 400px;
+    }
+
+	.description{
+		flex-direction: column;
+        width: auto;
 	}
-	article {
-		width: 50%;
-	}
-};
+
+    .photos{
+    width: 350px;
+    height: auto;
+    }
+}
 
 //VERSION MOBILE
 
 @media screen and (max-width: 780px) {
-   nav ul {
-        display:flex;
+
+    .container{
+        flex-direction: column;
+        }
+  
+    nav ul{
+        flex-direction: column;
         justify-content:center;
         text-align:center;
+        height: auto;
     }
-	article {
-		width: 100%;
-	}
-};
 
+    .bandeau{
+        width: 500px;
+        height: 200px;
+    }
 
-   
+    .carroussel{
+        width: 500px;
+        height: 250px;
+        margin: 1em 0;
+    }
+
+    .photos{
+    width: 200px;
+    height: auto;
+    }
+
+    section{
+    width:auto;
+    height: auto;
+    }
+
+    .nous{
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    height: auto;
+    }
+
+    .adverts{
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    height: auto;
+    }
+
+    .politiques ul{
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    height: auto;
+    }
+}

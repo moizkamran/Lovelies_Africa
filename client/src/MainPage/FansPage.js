@@ -22,14 +22,14 @@ const FansPage = () => {
 
   return (
     <>
-     <img
-          className="bandeau"
-          src="../img/conception/bandeau.jpg"
-          alt="bandeau"
-        />
+      <img
+        className="bandeau"
+        src="../img/conception/bandeau.jpg"
+        alt="bandeau"
+      />
       {category.map((category, i) => (
         <section className="terms" key={i}>
-            <h1>{category.name}</h1>
+          <h1>{category.name}</h1>
           <p className="pitch">{category.description}</p>
           <img
             className="photos description article"

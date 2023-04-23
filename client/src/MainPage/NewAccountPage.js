@@ -76,7 +76,7 @@ const NewAccountPage = () => {
   return (
     <>
       <div className="terms">
-      <img
+        <img
           className="bandeau"
           src="../img/conception/bandeau.jpg"
           alt="bandeau"
@@ -87,35 +87,51 @@ const NewAccountPage = () => {
       </div>
 
       <form>
-        <label htmlFor="name">Entrez votre nom</label>
-        <input type="text" id="name" value={name} onChange={handleChange} />
-        <label htmlFor="firstname">Entrez votre prénom</label>{" "}
-        <input
-          type="text"
-          id="firstname"
-          value={firstname}
-          onChange={handleChange}
-        />
-        <label htmlFor="email">Entrez votre email</label>{" "}
-        <input type="email" id="email" value={email} onChange={handleChange} />
-        <label htmlFor="password">Créez un mot de passe</label>{" "}
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={handleChange}
-        />
-        <button className="link" type="button" onClick={submit}>
-          Créer un compte
-        </button>
+        <div>
+          <label htmlFor="name">Nom</label>
+          <input type="text" id="name" value={name} onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor="firstname">Prénom</label>{" "}
+          <input
+            type="text"
+            id="firstname"
+            value={firstname}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>{" "}
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Mot de passe</label>{" "}
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <button className="link" type="button" onClick={submit}>
+            Créer un compte
+          </button>
+        </div>
+        <div>
+          <p>
+            {/* Redirection si j'ai déja un compte */}
+            <a className="lien" href="/connectPage">
+              J'ai déjà un compte
+            </a>
+          </p>
+        </div>
       </form>
-
-      <div>
-        <p>
-          {/* Redirection si j'ai déja un compte */}
-          <a href="/connectPage">J'ai déjà un compte</a>
-        </p>
-      </div>
     </>
   );
 };

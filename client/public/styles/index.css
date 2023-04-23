@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: "font1";
   src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
 }
 * {
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", "Calibri", "sans-serif", "font1";
 }
 
 #root {
@@ -18,7 +20,7 @@ body {
 
 .container {
   max-width: 1400px;
-  margin: 0px;
+  margin: 5px 0;
 }
 
 h1 {
@@ -53,8 +55,8 @@ li {
 }
 
 button {
-  background-color: rgba(255, 238, 124, 0.927);
-  border-color: white;
+  background-color: rgba(204, 123, 123, 0.912);
+  border-color: rgb(255, 196, 21);
   margin: 2px;
   padding: 2px;
 }
@@ -62,6 +64,11 @@ button {
 .link {
   text-decoration: none;
   color: black;
+  font-weight: bolder;
+}
+
+.lien {
+  color: rgb(0, 0, 0);
   font-weight: bolder;
 }
 
@@ -87,7 +94,7 @@ nav ul {
 nav ul a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: larger;
 }
 nav ul a:hover {
   color: rgba(242, 213, 25, 0.927);
@@ -120,7 +127,7 @@ nav ul a:hover {
 
 .description {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color: rgb(32, 32, 32);
   margin: 2em 0;
 }
@@ -170,15 +177,44 @@ img_preorder {
   height: 1000px;
 }
 
-.policy h2 h3 {
-  font-size: 20px;
+.features h3 {
+  background-color: rgb(180, 99, 85);
+}
+
+form {
+  display: block;
+  background-color: rgb(216, 181, 181);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  padding: 3px;
+  margin: 0;
+  width: 50%;
+  height: 70px;
+}
+form div label {
+  font-weight: bolder;
+}
+
+.coordonnées {
+  font-size: larger;
+}
+
+.highlight {
+  background-color: rgb(180, 99, 85);
+}
+
+.policy h3 {
   color: maroon;
 }
 
-.politiques ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.policy h2 {
+  font-size: 20px;
+  color: maroon;
 }
 
 .terms {
@@ -195,7 +231,6 @@ img_preorder {
 }
 
 .terms h1 {
-  font-weight: bold;
   text-transform: uppercase;
   color: rgb(180, 99, 85);
   background-color: black;
@@ -217,11 +252,12 @@ img_preorder {
   color: white;
 }
 #footer .adverts {
-  display: block;
+  display: inline-block;
   justify-content: center;
-  align-items: justify;
+  align-items: center;
   color: white;
   padding: 2em;
+  margin: 0;
 }
 #footer ul {
   padding: 2em;
@@ -240,25 +276,72 @@ img_preorder {
   width: 100px;
   display: flex;
 }
+#footer .politiques ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 @media screen and (max-width: 1200px) {
-  nav ul {
-    flex-wrap: wrap;
+  .container {
+    flex-direction: column;
   }
-  main {
-    flex-wrap: wrap;
+  .bandeau {
+    width: 1000px;
+    height: 400px;
   }
-  article {
-    width: 50%;
+  .description {
+    flex-direction: column;
+    width: auto;
+  }
+  .photos {
+    width: 350px;
+    height: auto;
   }
 }
 @media screen and (max-width: 780px) {
+  .container {
+    flex-direction: column;
+  }
   nav ul {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    height: auto;
   }
-  article {
-    width: 100%;
+  .bandeau {
+    width: 500px;
+    height: 200px;
+  }
+  .carroussel {
+    width: 500px;
+    height: 250px;
+    margin: 1em 0;
+  }
+  .photos {
+    width: 200px;
+    height: auto;
+  }
+  section {
+    width: auto;
+    height: auto;
+  }
+  .nous {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+  .adverts {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+  .politiques ul {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
   }
 }/*# sourceMappingURL=index.css.map */
