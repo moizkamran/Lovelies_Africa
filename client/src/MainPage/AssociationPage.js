@@ -2,15 +2,17 @@ const AssociationPage = () => {
   return (
     <>
       <section className="title terms">
-      <img
+        <img
           className="bandeau"
           src="../img/conception/bandeau.jpg"
           alt="bandeau"
         />
         <h1>Association Lovelies People</h1>
-        <p className="pitch">Lovelies Premium Brand s'engage.
-          Pour chaque achat sur notre boutique Lovelies Africa, nous dédions
-          2,5% par vente destinés aux projets caritatifs.
+        <p className="pitch">Mille mercis de votre soutien !</p>
+        <p className="pitch">
+          Grâce à vos achats, nous oeuvrons pour des projets humanitaires et
+          redistribuons aux plus nécessiteux à travers les actions de notre
+          association.
         </p>
       </section>
 
@@ -53,11 +55,12 @@ const AssociationPage = () => {
             d'environnement.
           </p>
           <button>
-            <a className="link" href="/collection"> Je soutiens en achetant</a>
+            <a className="link" href="/collection">
+              {" "}
+              Je soutiens en achetant
+            </a>
           </button>
         </article>
-
-       
       </section>
 
       <section className="description">
@@ -71,7 +74,7 @@ const AssociationPage = () => {
 
         <article className="article">
           <h2>Pour un monde meilleur</h2>
-          <p> 
+          <p>
             Rendre à la communauté de la meilleure des manières en apportant une
             contribution positive à la société.
           </p>
@@ -94,7 +97,9 @@ const AssociationPage = () => {
             Dakaroise confectionné à Dakar.
           </p>
           <button>
-            <a className="link" href="/contact">J'offre une donation</a>
+            <a className="link" href="/contact">
+              J'offre une donation
+            </a>
           </button>
         </article>
       </section>

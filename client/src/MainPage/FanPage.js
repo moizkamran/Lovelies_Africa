@@ -27,6 +27,14 @@ const FanPage = () => {
       </section>
       <section className="detail">
         <div>
+          <p>
+            <strong>
+              Nous distribuons nos produits auprès des professionnels notamment
+              les comités d'entreprise, décorateurs et architectes, enseignes et
+              commerces, grossistes et revendeurs physique et e-commerce.
+              N'hésitez pas à nous contacter pour toute demande spécifique.
+            </strong>
+          </p>
           <img className="photos" src={"/img/" + fans.image} alt={fans.name} />
         </div>
         <div>
