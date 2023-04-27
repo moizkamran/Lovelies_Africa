@@ -61,7 +61,6 @@ const UserById = (req, res) => {
   );
 };
 
-
 //Modification utilisateur
 const UserUpdate = (req, res) => {
   bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
@@ -74,6 +73,7 @@ const UserUpdate = (req, res) => {
     );
   });
 };
+
 //Suppression utilisation
 const UserDelete = (req, res) => {
   let id = req.params.id;
