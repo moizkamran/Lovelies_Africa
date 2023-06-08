@@ -4,12 +4,12 @@ const BoardPage = () => {
   return (
     <>
       <section className="title terms">
-      <img
+        <img
           className="bandeau"
           src="../img/conception/bandeau.jpg"
           alt="bandeau"
         />
-        <h1>Mon compte</h1>
+        <h1>Mon compte client</h1>
       </section>
 
       <section className="commandes">
