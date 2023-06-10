@@ -17,6 +17,7 @@ import ConnectPage from "./MainPage/ConnectPage";
 import DisconnectPage from "./MainPage/DisconnectPage.js"
 import NewAccountPage from "./MainPage/NewAccountPage";
 import BoardPage from "./MainPage/BoardPage";
+import ProtectRoute from "./utils/protectRoute";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
             <Route path="/legalnotice" element={<LegalNotice />} />
             <Route path="/privatepolicy" element={<PrivatePolicy />} />
             <Route path="/refundpolicy" element={<RefundPolicy />} />
-            <Route path="/account" element={<BoardPage />} />
+            <Route path="/account" element={<ProtectRoute><BoardPage /></ProtectRoute>}/>
             <Route path="/newAccountPage" element={<NewAccountPage />} />
             <Route path="/connectPage" element={<ConnectPage />} />
             <Route path="/disconnectPage" element={<DisconnectPage />} />
